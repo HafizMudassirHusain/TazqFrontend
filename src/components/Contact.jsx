@@ -1,0 +1,61 @@
+import React from "react";
+import { BsStars } from "react-icons/bs";
+
+export default function Contact() {
+  return (
+    <div className="py-16 w-full">
+      {/* Contact Section */}
+        <button className="my-10 mx-auto text-3xl font-bold text-white px-8 py-2 flex items-center gap-2 rounded-lg border border-[#8CA419] hover:bg-[#8CA419] transition duration-300">
+        <BsStars className="w-10 h-10" /> Contact Us
+        </button>
+      <div className="relative  p-8 rounded-lg text-center mx-auto shadow-2xl border-l-4 border-[#8CA419] transform transition-all duration-500  hover:border-[#C0C0C0]">
+        {/* Decorative Elements */}
+        <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-[#8CA419] w-12 h-12 rounded-full flex items-center justify-center shadow-lg">
+          <svg
+            className="w-6 h-6 text-black"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            />
+          </svg>
+        </div>
+
+        <h2 className="text-4xl font-bold text-[#8CA419] mb-4">
+          Want To Get In Touch With Us?
+        </h2>
+        <p className="text-white text-lg mt-4 max-w-2xl mx-auto">
+          Book a free 30-minute consultation call and get access to our personalized branding questionnaire!
+        </p>
+
+        {/* Animated Button */}
+        <button className="mt-8 bg-[#8CA419] text-black px-8 py-4 rounded-full font-semibold hover:bg-[#a0c12b] transition-all duration-300 transform hover:scale-110 hover:shadow-lg flex items-center justify-center mx-auto">
+          <svg
+            className="w-6 h-6 mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+            />
+          </svg>
+          Book a Call
+        </button>
+
+        {/* Gradient Background Effect */}
+        {/* <div className="absolute -inset-4 bg-gradient-to-r from-[#8CA419] to-[#C0C0C0] opacity-10 blur-lg rounded-lg -z-10"></div> */}
+      </div>
+    </div>
+  );
+}

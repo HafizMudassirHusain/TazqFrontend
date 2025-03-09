@@ -1,0 +1,5 @@
+ color them is #121212, #8CA419, #C0C0C0
+
+
+
+ hesdinSize and color: text-5xl md:text-6xl lg:text-7xl font-bold
