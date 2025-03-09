@@ -19,7 +19,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="bg-black text-white py-16 px-6">
+    <div className=" text-white py-16 px-6">
       {/* Title Section */}
             <button className="my-10 mx-auto text-3xl font-bold text-white px-8 py-2 flex items-center gap-2 rounded-lg border border-[#8CA419] hover:bg-[#8CA419] transition duration-300">
             <BsStars className="w-10 h-10" /> Design Portfolio

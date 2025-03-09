@@ -24,7 +24,7 @@ export default function TazqSol() {
   ];
 
   return (
-    <div className="bg-black text-white min-h-screen flex flex-col justify-center items-center p-6 my-20">
+    <div className=" text-white min-h-screen flex flex-col justify-center items-center p-6 my-20">
       {/* Header Section */}
       <h1 className="text-5xl md:text-6xl font-bold lg:text-7xl mb-10 text-center text-white ">
         How <strong className="text-[#8CA419]">Tazq Sol </strong>Can Help You

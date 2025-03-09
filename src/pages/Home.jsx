@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
+import React from "react";
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
 import TazqSol from "../components/TazqSol";
@@ -8,37 +7,57 @@ import Portfolio from "../components/Portfolio";
 import CreativeDesigns from "../components/CreativeDesigns";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import ParticleBackground from "../components/ParticleBackground"; // Import ParticleBackground
 
-const Homepage = () => {
+const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-screen">
+    <div className="flex flex-col items-center justify-center w-full min-h-screen relative">
+      {/* Particle Background */}
+      <div className="absolute inset-0 z-10">
+        <ParticleBackground />
+      </div>
+
       {/* Hero Section */}
-       <HeroSection />
+      <div className="relative z-10 w-full">
+        <HeroSection />
+      </div>
 
       {/* About Section */}
-       <AboutSection />
+      <div className="relative z-10 w-full">
+        <AboutSection />
+      </div>
 
-       {/* TazSol Section */}
-       <TazqSol />
+      {/* TazSol Section */}
+      <div className="relative z-10 w-full">
+        <TazqSol />
+      </div>
 
       {/* Testimonial Section */}
-      <Testimonials />
+      <div className="relative z-10 w-full">
+        <Testimonials />
+      </div>
 
-         {/* Portfolio Section */}
-         <Portfolio />
+      {/* Portfolio Section */}
+      <div className="relative z-10 w-full">
+        <Portfolio />
+      </div>
 
-        {/* Creative Design Section */}
+      {/* Creative Design Section */}
+      <div className="relative z-10 w-full">
         <CreativeDesigns />
+      </div>
 
-
-        {/* Contact Section */}
+      {/* Contact Section */}
+      <div className="relative z-10 w-full">
         <Contact />
+      </div>
 
-         {/* Contact Section */}
-         <Footer />
-      
+      {/* Footer Section */}
+      <div className="relative z-10 w-full">
+        <Footer />
+      </div>
     </div>
   );
 };
 
-export default Homepage;
+export default Home;

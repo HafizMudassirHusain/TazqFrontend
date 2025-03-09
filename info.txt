@@ -4,6 +4,7 @@
 
  hesdinSize and color: text-5xl md:text-6xl lg:text-7xl font-bold
 
-
+library particle.js: cammand : npm install react-tsparticles
+                             : npm install tsparticles
 
  
