@@ -7,6 +7,7 @@ import Testimonials from "../components/Testimonials";
 import Portfolio from "../components/Portfolio";
 import CreativeDesigns from "../components/CreativeDesigns";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Homepage = () => {
   return (
@@ -32,6 +33,9 @@ const Homepage = () => {
 
         {/* Contact Section */}
         <Contact />
+
+         {/* Contact Section */}
+         <Footer />
       
     </div>
   );
