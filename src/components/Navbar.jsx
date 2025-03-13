@@ -18,7 +18,7 @@ const Navbar = () => {
           <Link to='/about' className="hover:text-[#8CA419] transition duration-300">About Us</Link>
           <Link to='/services' className="hover:text-[#8CA419] transition duration-300">Services</Link>
           <Link to='/portfolio' className="hover:text-[#8CA419] transition duration-300">Portfolio</Link>
-          <Link to='#' className="hover:text-[#8CA419] transition duration-300">Contact</Link>
+          <Link to='/contact' className="hover:text-[#8CA419] transition duration-300">Contact</Link>
         </div>
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
