@@ -15,12 +15,14 @@ export default function CreativeDesigns() {
     <section className="bg-gray-900 w-full text-white py-16 px-6">
       <div className="max-w-6xl mx-auto text-center">
         {/* Section Title */}
-         <button className="my-10 mx-auto text-3xl font-bold text-white px-8 py-2 flex items-center gap-2 rounded-lg border border-[#8CA419] hover:bg-[#8CA419] transition duration-300">
-          <BsStars className="w-10 h-10" /> Creative Toolkit
+        <div>
+          <button className="my-10 mx-auto text-xl sm:text-2xl md:text-3xl font-bold text-white px-6 sm:px-8 py-2 flex items-center gap-2 rounded-lg border border-[#8CA419] hover:bg-[#8CA419] transition duration-300">
+            <BsStars className="w-8 h-8 sm:w-10 sm:h-10" /> Creative Toolkit
           </button>
-        <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold w-3/4 mx-auto ">
-          Experience The <strong className="text-[#8CA419]">Creative Origin</strong> Of Designs 
-        </h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold w-full sm:w-4/5 md:w-3/4 mx-auto text-center">
+            Experience The <strong className="text-[#8CA419]">Creative Origin</strong> Of Designs
+          </h2>
+        </div>
         <p className="text-lg text-white mt-4">
           Get high-quality, innovative designs at the most affordable rates. Our expert designers bring creativity and uniqueness to every project.
         </p>
@@ -38,8 +40,8 @@ export default function CreativeDesigns() {
           </div>
         ))}
       </div>
-      <p className="text-xl mx-auto w-1/2 my-15">Take advantage of the Primordial Toolkit and stand out immediately.
-           Use our world-class graphic designers to put your brand out there!</p>
+      <p className="text-xl mx-auto w-1/2 my-15">Take advantage of the Tazq solution Toolkit and stand out immediately.
+        Use our world-class graphic designers to put your brand out there!</p>
 
     </section>
   );

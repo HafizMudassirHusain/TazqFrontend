@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { FaEye, FaTimes } from "react-icons/fa"; // Importing icons
-import portfolio1 from "../assets/portfoliobrand.jpg";
-import portfolio2 from "../assets/portfoliomarket.jfif";
-import portfolio3 from "../assets/portfoliouiux.png";
-import portfolio4 from "../assets/portfoliosocial.webp";
-import portfolio5 from "../assets/portfolioidentity.jpg";
+import portfolio1 from "../../assets/portfoliobrand.jpg";
+import portfolio2 from "../../assets/portfoliomarket.jfif";
+import portfolio3 from "../../assets/portfoliouiux.png";
+import portfolio4 from "../../assets/portfoliosocial.webp";
+import portfolio5 from "../../assets/portfolioidentity.jpg";
 import { BsStars } from "react-icons/bs";
 
 export default function Portfolio() {
@@ -21,12 +21,14 @@ export default function Portfolio() {
   return (
     <div className=" text-white py-16 px-6">
       {/* Title Section */}
-            <button className="my-10 mx-auto text-3xl font-bold text-white px-8 py-2 flex items-center gap-2 rounded-lg border border-[#8CA419] hover:bg-[#8CA419] transition duration-300">
-            <BsStars className="w-10 h-10" /> Design Portfolio
-            </button>
-      <h2 className="text-5xl md:text-6xl font-bold text-center text-[#ffffff]">
-        The <strong className="text-[#8CA419]">Work</strong>  We Did For Our Clients
-      </h2>
+      <div>
+        <button className="my-10 mx-auto text-xl sm:text-2xl md:text-3xl font-bold text-white px-6 sm:px-8 py-2 flex items-center gap-2 rounded-lg border border-[#8CA419] hover:bg-[#8CA419] transition duration-300">
+          <BsStars className="w-8 h-8 sm:w-10 sm:h-10" /> Design Portfolio
+        </button>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-[#ffffff]">
+          The <strong className="text-[#8CA419]">Work</strong> We Did For Our Clients
+        </h2>
+      </div>
       <p className="text-gray-300 text-center mt-4 text-lg max-w-3xl mx-auto">
         Primordial has already worked with the industry's most recognized names.
         Our work is widespread on LinkedIn.
@@ -46,7 +48,7 @@ export default function Portfolio() {
             <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
               <button
                 onClick={() => setSelectedProject(project)}
-                className="bg-[#8CA419] text-white px-4 py-2 rounded-md flex items-center gap-2 hover:border-[#576c3a] hover:border hover:border-2  hover:bg-white hover:text-[#8CA419] transition"
+                className="bg-[#8CA419] text-white px-4 py-2 rounded-md flex items-center gap-2 hover:bg-white hover:text-[#8CA419] transition"
               >
                 <FaEye className="text-lg" /> {project.title}
               </button>

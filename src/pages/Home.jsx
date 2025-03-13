@@ -1,12 +1,11 @@
 import React from "react";
-import HeroSection from "../components/HeroSection";
-import AboutSection from "../components/AboutSection";
-import TazqSol from "../components/TazqSol";
-import Testimonials from "../components/Testimonials";
-import Portfolio from "../components/Portfolio";
-import CreativeDesigns from "../components/CreativeDesigns";
+import HeroSection from "../components/HomeComponents/HeroSection";
+import AboutSection from "../components/HomeComponents/AboutSection";
+import TazqSol from "../components/HomeComponents/TazqSol";
+import Testimonials from "../components/HomeComponents/Testimonials";
+import Portfolio from "../components/HomeComponents/Portfolio";
+import CreativeDesigns from "../components/HomeComponents/CreativeDesigns";
 import Contact from "../components/Contact";
-import Footer from "../components/Footer";
 import ParticleBackground from "../components/ParticleBackground"; // Import ParticleBackground
 
 const Home = () => {
@@ -52,10 +51,6 @@ const Home = () => {
         <Contact />
       </div>
 
-      {/* Footer Section */}
-      <div className="relative z-10 w-full">
-        <Footer />
-      </div>
     </div>
   );
 };

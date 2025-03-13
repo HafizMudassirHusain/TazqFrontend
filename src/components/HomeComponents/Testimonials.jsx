@@ -72,10 +72,10 @@ export default function Testimonials() {
   return (
     <div className="w-[100%] bg-gray-900 text-white py-16 px-12 overflow-hidden">
       {/* Title Section */}
-      <button className="my-10 mx-auto text-3xl font-bold text-white px-8 py-2 flex items-center gap-2 rounded-lg border border-[#8CA419] hover:bg-[#8CA419] transition duration-300">
-        <BsStars className="w-10 h-10" /> What They Say
+      <button className="my-10 mx-auto text-xl sm:text-2xl md:text-3xl font-bold text-white px-6 sm:px-8 py-2 flex items-center gap-2 rounded-lg border border-[#8CA419] hover:bg-[#8CA419] transition duration-300">
+        <BsStars className="w-8 h-8 sm:w-10 sm:h-10" /> What They Say
       </button>
-      <h2 className="mx-auto w-2/3 text-5xl md:text-6xl font-bold text-center text-white">
+      <h2 className="mx-auto w-full sm:w-4/5 md:w-2/3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white">
         What Do The <strong className="text-[#8CA419]">Best Creators</strong> Say About Us?
       </h2>
       <p className="text-gray-300 text-center mt-4 text-lg max-w-3xl mx-auto">

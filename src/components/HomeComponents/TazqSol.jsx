@@ -26,13 +26,13 @@ export default function TazqSol() {
   return (
     <div className=" text-white min-h-screen flex flex-col justify-center items-center p-6 my-20">
       {/* Header Section */}
-      <h1 className="text-5xl md:text-6xl font-bold lg:text-7xl mb-10 text-center text-white ">
-        How <strong className="text-[#8CA419]">Tazq Sol </strong>Can Help You
+      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-10 text-center text-white">
+        How <strong className="text-[#8CA419]">Tazq Sol</strong> Can Help You
       </h1>
 
       {/* Main Container */}
       <div className="max-w-6xl grid md:grid-cols-2 gap-10 relative">
-        
+
         {/* Challenges Section */}
         <div className="flex flex-col gap-6 bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-[#8CA419]">
           <h2 className="text-2xl font-semibold text-[#C0C0C0] mb-2 text-center">

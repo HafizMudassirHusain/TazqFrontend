@@ -16,15 +16,29 @@ const ParticleBackground = () => {
           color: "#000000", // Black background
         },
         fpsLimit: 60,
+        interactivity: {
+          events: {
+            onHover: {
+              enable: true,
+              mode: "grab", // Grab particles on hover
+            },
+          },
+        },
         particles: {
           color: {
-            value: "#FFFFFF", // White particles
+            value: "#8CA419", // Green particles
+          },
+          links: {
+            color: "#8CA419", // Green connecting lines
+            distance: 150,
+            enable: true,
+            opacity: 0.5,
+            width: 1,
           },
           move: {
-            direction: "bottom", // Particles fall downward
+            direction: "none",
             enable: true,
-            speed: 2, // Slow falling speed
-            straight: false,
+            speed: 3, // Medium movement
           },
           number: {
             density: {
@@ -37,7 +51,7 @@ const ParticleBackground = () => {
             value: 0.7,
           },
           shape: {
-            type: "circle", // Snowflake shape
+            type: "triangle", // Star-shaped particles
           },
           size: {
             value: { min: 1, max: 5 }, // Random size

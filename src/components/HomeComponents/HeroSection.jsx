@@ -1,5 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
-import avatar1 from "../assets/avatar1.avif";
+import avatar1 from "../../assets/avatar1.avif";
 import ProfileCard from "./ProfileCard";
 
 const HeroSection = () => {
@@ -32,10 +32,10 @@ const HeroSection = () => {
       </div>
 
       {/* Heading & Description */}
-      <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold w-[90%] md:w-[70%] mx-auto text-white leading-tight">
-        The <strong className="text-[#8CA419]">Creative Origin</strong> Of Your
+      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold w-[90%] sm:w-[80%] md:w-[70%] mx-auto text-white leading-tight">
+      The <strong className="text-[#8CA419]">Creative Origin</strong> Of Your
         Brand's Identity
-      </h1>
+        </h1>
       <p className="text-lg md:text-xl font-semibold mt-4 max-w-2xl mx-auto text-[#C0C0C0]">
         Is your brand lost in the sea of generic designs? Take hold of the
         Primordial toolkit and make your brand stand out!

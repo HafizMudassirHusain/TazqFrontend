@@ -5,7 +5,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope, FaPhone } f
 export default function Footer() {
   return (
     <>
-      <footer className="bg-black text-white py-12 px-6">
+      <footer className="bg-black text-white py-12 px-6 z-100">
         <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-8">
           {/* Logo and Motive */}
           <div>
