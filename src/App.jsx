@@ -10,7 +10,7 @@ import ProjectDetails from "./pages/ProjectDetails";
 import AppDev from "./pages/AppDev";
 import ContentWri from "./pages/ContentWri";
 import WebDevelopPrice from "./pages/WebDevelopPricing";
-import DigitalMarketingPrice from "./pages/digitalMarketingPricing";
+import DigitalMarketingPricing from './pages/digitalMarketingPricing';
 import GraphicDesignPrice from "./pages/GraphicDesigningPricing";
 import VideosEditingPrice from "./pages/VideoEditingPricing";
 
@@ -33,7 +33,7 @@ function App() {
           <Route path="/appdevprice" element={<AppDev />} />
           <Route path="/contentwriterprice" element={<ContentWri />} />
           <Route path="/webdevelopprice" element={<WebDevelopPrice />} />
-          <Route path="/digitalmarketprice" element={<DigitalMarketingPrice />} />
+          <Route path="/digitalmarketprice" element={<DigitalMarketingPricing />} />
           <Route path="/graphicdesignprice" element={<GraphicDesignPrice />} />
           <Route path="/videoeditingprice" element={<VideosEditingPrice />} />
 
