@@ -1,7 +1,6 @@
 import { FaArrowRight } from "react-icons/fa";
-import c1 from "../../assets/ClientsImg/c1.png";
-import c2 from "../../assets/ClientsImg/c2.png";
-import c3 from "../../assets/ClientsImg/c3.png";
+import c1 from "../../assets/clientsimg/c1.png";
+import c2 from "../../assets/clientsimg/c2.png";
 import creater1 from "../../assets/tazqteam/ariba.jpg";
 import creater2 from "../../assets/tazqteam/asif.jpg";
 import creater3 from "../../assets/tazqteam/asim.jpg";
