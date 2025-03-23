@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { BsStars } from "react-icons/bs";
-import c1 from "../../assets/ClientsImg/c1.png";
-import c2 from "../../assets/ClientsImg/c2.png";
-import c3 from "../../assets/ClientsImg/c3.png";
-import c4 from "../../assets/ClientsImg/c4.png";
+import c1 from "../../assets/clientsimg/c1.png";
+import c2 from "../../assets/clientsimg/c2.png";
+import c3 from "../../assets/clientsimg/c3.png";
+import c4 from "../../assets/clientsimg/c4.png";
 
 export default function Testimonials() {
   const testimonials = [
