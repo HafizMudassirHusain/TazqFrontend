@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaGlobe, FaFacebook, FaTwitter, FaCommentDots } from "react-icons/fa";
 
-const ContactSupport = () => {
+function ContactSupport() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
   const handleChange = (e) => {
@@ -40,8 +40,7 @@ const ContactSupport = () => {
               value={formData.name}
               onChange={handleChange}
               className="w-full p-2 border border-[#8CA419] bg-[#121212] rounded-md text-white"
-              required
-            />
+              required />
           </div>
           <div className="mb-4">
             <label className="block text-gray-300 mb-1">Email</label>
@@ -51,8 +50,7 @@ const ContactSupport = () => {
               value={formData.email}
               onChange={handleChange}
               className="w-full p-2 border border-[#8CA419] bg-[#121212] rounded-md text-white"
-              required
-            />
+              required />
           </div>
           <div className="mb-4">
             <label className="block text-gray-300 mb-1">Message</label>
@@ -116,6 +114,6 @@ const ContactSupport = () => {
       </div>
     </section>
   );
-};
+}
 
 export default ContactSupport;
