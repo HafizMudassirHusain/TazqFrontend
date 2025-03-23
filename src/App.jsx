@@ -10,7 +10,7 @@ import ProjectDetails from "./pages/ProjectDetails";
 import AppDev from "./pages/AppDev";
 import ContentWri from "./pages/ContentWri";
 import WebDevelopPrice from "./pages/WebDevelopPricing";
-import DigitalMarketingPricing from './pages/digitalMarketingPricing';
+import DigitalMarketingPricing from './pages/DigitalMarketingPricing';
 import GraphicDesignPrice from "./pages/GraphicDesigningPricing";
 import VideosEditingPrice from "./pages/VideoEditingPricing";
 
