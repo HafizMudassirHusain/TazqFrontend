@@ -1,5 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { BsStars } from "react-icons/bs";
+import c1 from "../../assets/ClientsImg/c1.png";
+import c2 from "../../assets/ClientsImg/c2.png";
+import c3 from "../../assets/ClientsImg/c3.png";
+import c4 from "../../assets/ClientsImg/c4.png";
 
 export default function Testimonials() {
   const testimonials = [
@@ -8,28 +12,26 @@ export default function Testimonials() {
       role: "Marketing Strategist",
       feedback:
         "TazQ Sol transformed our brand’s online presence. Their innovative approach gave us an edge over competitors.",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
-    },
+      image: c1 ,  },
     {
       name: "Sophia Lee",
       role: "Creative Director",
       feedback:
         "Incredible experience! Their design and branding solutions are top-notch and truly impactful.",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
+      image: c2,
     },
     {
       name: "Michael Chen",
       role: "Tech Entrepreneur",
       feedback:
         "TazQ Sol helped scale my startup with their strategic branding and marketing expertise. Highly recommended!",
-      image: "https://randomuser.me/api/portraits/men/50.jpg",
-    },
+      image: c3,  },
     {
       name: "Emily Carter",
       role: "LinkedIn Influencer",
       feedback:
         "A must-have partner for content creators. Their team understands branding like no one else.",
-      image: "https://randomuser.me/api/portraits/women/29.jpg",
+      image: c4,
     },
   ];
 
@@ -117,7 +119,8 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index + testimonials.length}
-              className="bg-gray-900 p-6 rounded-lg shadow-lg border border-[#8CA419] flex flex-col items-center text-center w-80 min-w-[320px]"
+              className="bg-gray-900 p-6 rounded-lg shadow-lg border border-[#8CA419] 
+              flex flex-col items-center text-center w-80 min-w-[320px]"
             >
               <img
                 src={testimonial.image}

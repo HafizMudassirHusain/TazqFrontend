@@ -1,26 +1,28 @@
 import React from "react";
+import { MdCloudSync } from "react-icons/md";
+import { VscLightbulbSparkle } from "react-icons/vsc";
 
 export default function TazqSol() {
   const challenges = [
-    "🚀 My brand feels basic and lacks distinction",
-    "🤔 Not confident if my brand reflects my values",
-    "📉 Marketing materials are outdated & ineffective",
-    "🎨 I need a creative partner to bring my vision to life",
-    "❌ My website is not engaging or converting visitors",
-    "📊 Struggling with consistent social media branding",
-    "💼 Need a rebranding strategy to stay competitive",
-    "🎯 My target audience doesn’t connect with my messaging",
+    " My brand feels basic and lacks distinction",
+    " Not confident if my brand reflects my values",
+    " Marketing materials are outdated & ineffective",
+    " I need a creative partner to bring my vision to life",
+    // " My website is not engaging or converting visitors",
+    // " Struggling with consistent social media branding",
+    // " Need a rebranding strategy to stay competitive",
+    // " My target audience doesn’t connect with my messaging",
   ];
 
   const solutions = [
-    "✨ Unique brand identity that sets you apart",
-    "💡 A brand that authentically reflects your values",
-    "📈 High-quality marketing materials that attract",
-    "🤝 Collaborative partnership with a creative agency",
-    "🌐 A visually stunning website that drives conversions",
-    "📢 Consistent and engaging social media branding",
-    "🔄 A tailored rebranding strategy for modern appeal",
-    "🗣️ Clear messaging that resonates with your audience",
+    " Unique brand identity that sets you apart",
+    " A brand that authentically reflects your values",
+    " High-quality marketing materials that attract",
+    " Collaborative partnership with a creative agency",
+    // " A visually stunning website that drives conversions",
+    // " Consistent and engaging social media branding",
+    // " A tailored rebranding strategy for modern appeal",
+    // " Clear messaging that resonates with your audience",
   ];
 
   return (
@@ -42,8 +44,10 @@ export default function TazqSol() {
             {challenges.map((challenge, index) => (
               <li
                 key={index}
-                className="relative text-lg bg-gray-900 px-4 py-2 rounded-md text-gray-300 text-left shadow-lg border border-[#8CA419]"
+                className="relative text-2xl bg-gray-900 px-4 py-2 rounded-md text-gray-300 text-left shadow-lg flex items-center border border-[#8CA419]"
               >
+                <MdCloudSync className="bg-[#8CA419] text-4xl w-10 mr-4 border 
+                rounded border-gray-100" />
                 {challenge}
 
                 {/* Connecting Arrow Line */}
@@ -52,6 +56,7 @@ export default function TazqSol() {
             ))}
           </ul>
         </div>
+
 
         {/* Solutions Section */}
         <div className="flex flex-col gap-6 bg-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-[#C0C0C0]">
@@ -62,9 +67,11 @@ export default function TazqSol() {
             {solutions.map((solution, index) => (
               <li
                 key={index}
-                className="relative text-lg bg-gray-800 px-4 py-2 rounded-md text-gray-300 text-left shadow-lg border border-[#C0C0C0]"
+                className="relative flex items-center text-2xl bg-gray-800 px-4 py-2 rounded-md text-gray-300 
+                text-left shadow-lg border border-[#C0C0C0]"
               >
-                {solution}
+                <VscLightbulbSparkle className="bg-[#8CA419] w-10 text-4xl mr-4 border 
+                rounded border-gray-100" />{solution}
 
                 {/* Connecting Arrow Line */}
                 <div className="hidden md:block absolute top-1/2 left-[-25px] w-6 h-0.5 bg-[#C0C0C0]"></div>

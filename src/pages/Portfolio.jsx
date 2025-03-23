@@ -23,7 +23,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="py-20 bg-[#121212] text-white text-center">
+    <section className="py-20 bg-[#121212] mt-20 text-white text-center">
       <h2 className="text-4xl font-bold mb-6 text-[#8CA419]">Our Portfolio</h2>
       <p className="text-lg mb-12">Explore our successful projects across various industries.</p>
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">

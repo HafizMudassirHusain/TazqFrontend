@@ -10,4 +10,59 @@ library particle.js: cammand : npm install react-tsparticles
                              : npm install framer-motion
 
 
- 
+=========== LITTLE INTRO--------=======
+ [now start developing a backend from beggining of website i have just design these pages and its section (A. Homepage
+
+Hero section with an engaging headline and CTA.
+Little bit intro or about Us section
+How Tazq Sol Can Help You
+bullet point of(challenges and solution)
+Testimonials or client success stories
+
+The Work We Did For Our Clients: some project card are rendered of diifrent domain project.
+Experience The Creative Origin Of Designs.
+Contact and inquiry form
+
+B. About Us
+
+Company history and vision
+
+Mission and values
+
+Leadership and team introduction
+
+Achievements and certifications
+
+C. Services
+
+Detailed breakdown of IT services such as:
+
+Web development
+
+Mobile app development
+
+Software solutions
+
+Cloud computing
+
+Cybersecurity
+
+IT consulting
+
+Service-specific landing pages
+
+D. Portfolio & Case Studies
+
+Showcase of completed projects
+
+Industry-specific solutions
+
+Client testimonials and success metrics F. Contact & Support
+
+Contact form with required fields
+
+Live chat support integration
+
+Help center and FAQs
+
+Social media links)]

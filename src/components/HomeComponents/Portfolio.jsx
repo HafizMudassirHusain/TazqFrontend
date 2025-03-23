@@ -1,70 +1,111 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaEye, FaTimes } from "react-icons/fa"; // Importing icons
-import portfolio1 from "../../assets/portfoliobrand.jpg";
-import portfolio2 from "../../assets/portfoliomarket.jfif";
-import portfolio3 from "../../assets/portfoliouiux.png";
-import portfolio4 from "../../assets/portfoliosocial.webp";
-import portfolio5 from "../../assets/portfolioidentity.jpg";
 import { BsStars } from "react-icons/bs";
+import tazqaboutlogo from "../../assets/brandingkit/tazqaboutlogo.png"; // Replace with the actual logo path
+import Chip from "./Chip";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Portfolio() {
   const [selectedProject, setSelectedProject] = useState(null); // State for modal
+  const navigate = useNavigate();
+  // Disable body scroll when modal is open
+  useEffect(() => {
+    if (selectedProject) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [selectedProject]);
 
   const projects = [
-    { title: "Branding for Tech Startup", image: portfolio1 },
-    { title: "Marketing Campaign for E-commerce", image: portfolio2 },
-    { title: "UI/UX Design for Mobile App", image: portfolio3 },
-    { title: "Social Media Strategy", image: portfolio4 },
-    { title: "Creative Visual Identity", image: portfolio5 },
+    { category: "Editing", title: "Video's Editing", image: tazqaboutlogo, btn: "View More Editings" },
+    { category: "Marketing", title: "Digital Marketing", image: tazqaboutlogo, btn: "View More digi Marts" },
+    { category: "Design", title: "UI/UX Design", image: tazqaboutlogo, btn: "View More UI/UX" },
+    { category: "Marketing", title: "Social Media Banner", image: tazqaboutlogo, btn: "View More Banners" },
+    { category: "Development", title: "Web And App", image: tazqaboutlogo, btn: "View More WebApps" },
+    { category: "SEO", title: "SEO Project", image: tazqaboutlogo, btn: "View More Seos" },
+  ];
+
+  const chipsData = [
+    { image: tazqaboutlogo, name: "John Doe", followers: "50,000+ Followers" },
+    { image: tazqaboutlogo, name: "Jane Smith", followers: "30,000+ Followers" },
+    { image: tazqaboutlogo, name: "Jane Smith", followers: "30,000+ Followers" },
+    { image: tazqaboutlogo, name: "Jane Smith", followers: "30,000+ Followers" },
   ];
 
   return (
-    <div className=" text-white py-16 px-6">
+    <div className="text-white py-20 px-6">
       {/* Title Section */}
-      <div>
-        <button className="my-10 mx-auto text-xl sm:text-2xl md:text-3xl font-bold text-white px-6 sm:px-8 py-2 flex items-center gap-2 rounded-lg border border-[#8CA419] hover:bg-[#8CA419] transition duration-300">
-          <BsStars className="w-8 h-8 sm:w-10 sm:h-10" /> Design Portfolio
-        </button>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-[#ffffff]">
-          The <strong className="text-[#8CA419]">Work</strong> We Did For Our Clients
+      <div className="text-center mb-16">
+        <div>
+          <button className="my-10 mx-auto text-xl sm:text-2xl md:text-3xl font-bold text-white px-6 sm:px-8 py-2 flex items-center gap-2 rounded-lg border border-[#8CA419] hover:bg-[#8CA419] transition duration-300">
+            <BsStars className="w-8 h-8 sm:w-10 sm:h-10" /> Design Portfolio
+          </button>
+        </div>
+        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center text-white mb-4">
+          Our <span className="text-[#8CA419]">Work</span> Speaks for Itself
         </h2>
+        <p className="text-gray-300 text-center max-w-2xl mx-auto text-lg">
+          We've collaborated with industry leaders to deliver exceptional results.
+          Explore some of our standout projects below.
+        </p>
       </div>
-      <p className="text-gray-300 text-center mt-4 text-lg max-w-3xl mx-auto">
-        Primordial has already worked with the industry's most recognized names.
-        Our work is widespread on LinkedIn.
-      </p>
 
       {/* Portfolio Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-12">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {projects.map((project, index) => (
-          <div key={index} className="relative group rounded-lg shadow-lg border border-[#8CA419] overflow-hidden">
-            {/* Project Image */}
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-            />
-            {/* Overlay with Button */}
-            <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <button
-                onClick={() => setSelectedProject(project)}
-                className="bg-[#8CA419] text-white px-4 py-2 rounded-md flex items-center gap-2 hover:bg-white hover:text-[#8CA419] transition"
+          <div
+            key={index}
+            className="cardlayout border border-[#8CA419] p-6 rounded-lg"
+          >
+            <div className="border border-gray-700 rounded-lg overflow-hidden">
+              {/* Background Image with Title */}
+              <div
+                className="h-[100px] bg-cover bg-center flex items-end p-2"
+                style={{
+                  backgroundImage: `url(${project.image})`,
+                  backgroundSize: "150px",
+                  backgroundRepeat: "no-repeat",
+                }}
               >
-                <FaEye className="text-lg" /> {project.title}
+                <h1 className="text-lg font-bold text-white cursor-pointer"
+                  onClick={() => setSelectedProject(project)}
+                >{project.title}</h1>
+              </div>
+              {/* Button */}
+              <button
+                onClick={() => navigate(`/portfolio/${project.category}`, { state: project })}
+                className="w-full bg-[#8CA419] text-white py-2 hover:bg-white hover:text-[#8CA419] transition duration-300 text-sm"
+              >
+                {project.btn}
               </button>
             </div>
           </div>
         ))}
       </div>
 
+
+      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+        {chipsData.map((chip, index) => (
+          <Chip
+            key={index}
+            image={chip.image}
+            name={chip.name}
+            followers={chip.followers}
+          />
+        ))}
+      </div>
+
+
       {/* Popup Modal */}
       {selectedProject && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
-          <div className=" text-black p-6 rounded-lg shadow-lg relative max-w-lg w-full">
+        <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-6">
+          <div className="bg-[#1a1a1a] p-8 rounded-xl shadow-2xl relative max-w-2xl w-full border border-[#8CA419]">
             {/* Close Button */}
             <button
-              onClick={() => setSelectedProject(null)}
-              className="absolute top-0 right-0 text-white hover:text-red-600 text-xl"
+              onClick={() => setSelectedProject(null)} // Close modal
+              className="absolute top-4 right-4 text-gray-300 hover:text-red-600 text-2xl"
             >
               <FaTimes />
             </button>
@@ -72,10 +113,12 @@ export default function Portfolio() {
             <img
               src={selectedProject.image}
               alt={selectedProject.title}
-              className="w-full h-80 object-cover rounded-md"
+              className="w-full h-96 object-cover rounded-lg"
             />
             {/* Title */}
-            <h3 className="text-lg font-semibold text-center mt-4">{selectedProject.title}</h3>
+            <h3 className="text-2xl font-bold text-center mt-6 text-[#8CA419]">
+              {selectedProject.title}
+            </h3>
           </div>
         </div>
       )}

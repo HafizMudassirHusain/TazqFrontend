@@ -8,7 +8,7 @@ const AboutHistory = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="w-full bg-[#121212] text-white py-16 px-6 text-center"
+      className="w-full bg-[#121212] mt-20 text-white py-16 px-6 text-center"
     >
       <motion.h2 
         className="text-4xl font-bold text-[#8CA419]"

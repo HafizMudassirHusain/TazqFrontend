@@ -1,5 +1,5 @@
 import React from "react";
-import tazqLogo from "../../assets/tazqlogo.jfif"; // Replace with the actual logo path
+import tazqaboutlogo from "../../assets/brandingkit/tazqaboutlogo.png"; // Replace with the actual logo path
 import { BsStars } from "react-icons/bs";
 
 const AboutSection = () => {
@@ -29,9 +29,9 @@ const AboutSection = () => {
       {/* Right Image */}
       <div className="lg:w-1/2 h-[40vh]  flex justify-center mt-10 lg:mt-0">
         <img
-          src={tazqLogo}
+          src={tazqaboutlogo}
           alt="TazQ Solution Logo"
-          className="w-full  h-full md:w-80 "
+          className="w-full h-full md:w-120"
         />
       </div>
     </section>

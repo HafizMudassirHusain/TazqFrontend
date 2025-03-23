@@ -37,7 +37,7 @@ const Home = () => {
       </div>
 
       {/* Portfolio Section */}
-      <div className="relative z-10 w-full">
+      <div className="relative p-2 z-10 w-full">
         <Portfolio />
       </div>
 

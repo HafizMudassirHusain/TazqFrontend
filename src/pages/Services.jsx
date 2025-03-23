@@ -1,20 +1,27 @@
 import { motion } from "framer-motion";
-import { FaLaptopCode, FaMobileAlt, FaCloud, FaLock, FaCogs, FaHandsHelping } from "react-icons/fa";
+import { FaLaptopCode, FaMobileAlt } from "react-icons/fa";
 import Testimonials from "../components/HomeComponents/Testimonials";
+import { SiTaichigraphics } from "react-icons/si";
+import { BiSolidBookContent } from "react-icons/bi";
+import { MdOutlineLocalGroceryStore } from "react-icons/md";
+import { PiVideoFill } from "react-icons/pi";
+import { useNavigate } from "react-router-dom";
 
 const services = [
-  { icon: <FaLaptopCode size={40} />, title: "Web Development", description: "Custom websites and web apps tailored to your needs." },
-  { icon: <FaMobileAlt size={40} />, title: "Mobile App Development", description: "iOS and Android apps built for performance and scalability." },
-  { icon: <FaCogs size={40} />, title: "Software Solutions", description: "End-to-end software solutions for various industries." },
-  { icon: <FaCloud size={40} />, title: "Cloud Computing", description: "Leverage the power of cloud technologies for efficiency." },
-  { icon: <FaLock size={40} />, title: "Cybersecurity", description: "Protect your business with top-tier security measures." },
-  { icon: <FaHandsHelping size={40} />, title: "IT Consulting", description: "Expert IT consulting to help you grow your business." }
+  { icon: <FaLaptopCode size={40} />,  title: "Web Development", desc: "Stunning, responsive websites tailored to your needs.", link: "/webdevelopprice" },
+  { icon: <BiSolidBookContent size={40} />,  title: "Content Writer", desc: "Engaging and SEO-optimized content to captivate your audience.", link:"/contentwriterprice" },
+  { icon: <FaMobileAlt size={40} />,  title: "Mobile App", desc: "User-friendly and visually appealing mobile applications.", link: "/appdevprice" },
+  { icon: <SiTaichigraphics size={40} />, title: "Graphic Design", desc: "Unique logos and brand identities that stand out.", link: "/graphicdesignprice" },
+  { icon: <MdOutlineLocalGroceryStore size={40} />, title: "Digital Marketing", desc: "Strategies to grow your online presence and drive results.", link: "/digitalmarketprice" },
+  { icon: <PiVideoFill size={40} />, title: "Video Editing", desc: "Professional video editing to bring your stories to life.", link: "/videoeditingprice" },
 ];
 
 const Services = () => {
+const navigate = useNavigate("");
+
   return (
-    <section className="py-20 bg-[#121212] text-white">
-      <div className="container mx-auto text-center px-10 my-20">
+    <section className="py-20 text-white">
+      <div className="container mx-auto text-center px-4 sm:px-6 lg:px-8 my-20">
         <h2 className="text-4xl font-bold text-[#8CA419]">Our IT Services</h2>
         <p className="mt-4 text-lg text-[#C0C0C0]">We provide a wide range of IT solutions to help your business thrive.</p>
         
@@ -22,13 +29,27 @@ const Services = () => {
           {services.map((service, index) => (
             <motion.div 
               key={index}
-              className="p-6 bg-[#1E1E1E] rounded-lg shadow-lg flex flex-col items-center text-center border border-[#8CA419]"
+              className="border border-[#8CA419] rounded-xl p-6 bg-gradient-to-br from-[#1E1E1E] to-[#2C2C2C] flex flex-col gap-6 hover:shadow-lg hover:shadow-[#8CA419]/30 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <div className="text-[#8CA419] mb-4">{service.icon}</div>
-              <h3 className="text-2xl font-semibold">{service.title}</h3>
-              <p className="mt-2 text-[#C0C0C0]">{service.description}</p>
+              {/* Icon and Title Section */}
+              <div className="flex items-center gap-4">
+                <div className="text-[#8CA419] p-3 bg-[#1E1E1E] rounded-lg border border-[#8CA419] flex items-center justify-center">
+                  {service.icon}
+                </div>
+                <h1 className="text-2xl font-semibold">{service.title}</h1>
+              </div>
+
+              {/* Description */}
+              <p className="text-[#C0C0C0] text-left">{service.desc}</p>
+
+              {/* Button */}
+              <button 
+              onClick={()=> navigate(`${service.link}`)}
+              className="mt-4 w-full py-2 px-4 bg-[#8CA419] text-white rounded-lg hover:bg-[#6E8C15] transition duration-300">
+                View Full Pricing
+              </button>
             </motion.div>
           ))}
         </div>

@@ -16,7 +16,7 @@ const ContactSupport = () => {
   };
 
   return (
-    <section className="w-full bg-[#121212] text-white py-16 px-6">
+    <section className="w-full mt-20 bg-[#121212] text-white py-16 px-6">
       <div className="max-w-5xl mx-auto">
         {/* Heading */}
         <h2 className="text-4xl font-bold text-center text-[#8CA419]">Contact & Support</h2>
