@@ -10,6 +10,7 @@ import herobgimg from "../../assets/herobgimg.png";
 import ProfileCard from "./ProfileCard";
 
 const HeroSection = () => {
+  
   const creater = [
     { create: creater1 },
     { create: creater2 },
