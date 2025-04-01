@@ -8,6 +8,7 @@ library particle.js: cammand : npm install react-tsparticles
                              : npm install tsparticles
                              : npm i react-scroll-parallax
                              : npm install framer-motion
+                             : npm install emailjs-com
 
 
 =========== LITTLE INTRO--------=======

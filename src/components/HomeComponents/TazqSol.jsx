@@ -26,7 +26,7 @@ export default function TazqSol() {
   ];
 
   return (
-    <div className=" text-white min-h-screen flex flex-col justify-center items-center p-6 my-20">
+    <div className=" text-white min-h-screen flex flex-col justify-center items-center p-6">
       {/* Header Section */}
       <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-10 text-center text-white">
         How <strong className="text-[#8CA419]">Tazq Sol</strong> Can Help You
@@ -36,7 +36,7 @@ export default function TazqSol() {
       <div className="max-w-6xl grid md:grid-cols-2 gap-10 relative">
 
         {/* Challenges Section */}
-        <div className="flex flex-col gap-6 bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-[#8CA419]">
+        <div className="flex flex-col gap-6 p-6 rounded-lg shadow-lg border-l-4 border-[#8CA419]">
           <h2 className="text-2xl font-semibold text-[#C0C0C0] mb-2 text-center">
             Challenges
           </h2>
@@ -44,7 +44,7 @@ export default function TazqSol() {
             {challenges.map((challenge, index) => (
               <li
                 key={index}
-                className="relative text-2xl bg-gray-900 px-4 py-2 rounded-md text-gray-300 text-left shadow-lg flex items-center border border-[#8CA419]"
+                className="relative text-2xl px-4 py-2 rounded-md text-gray-300 text-left shadow-lg flex items-center border border-[#8CA419]"
               >
                 <MdCloudSync className="bg-[#8CA419] text-4xl w-10 mr-4 border 
                 rounded border-gray-100" />
@@ -59,7 +59,7 @@ export default function TazqSol() {
 
 
         {/* Solutions Section */}
-        <div className="flex flex-col gap-6 bg-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-[#C0C0C0]">
+        <div className="flex flex-col gap-6 p-6 rounded-lg shadow-lg border-l-4 border-[#C0C0C0]">
           <h2 className="text-2xl font-semibold text-[#8CA419] mb-2 text-center">
             Solutions
           </h2>
@@ -67,7 +67,7 @@ export default function TazqSol() {
             {solutions.map((solution, index) => (
               <li
                 key={index}
-                className="relative flex items-center text-2xl bg-gray-800 px-4 py-2 rounded-md text-gray-300 
+                className="relative flex items-center text-2xl px-4 py-2 rounded-md text-gray-300 
                 text-left shadow-lg border border-[#C0C0C0]"
               >
                 <VscLightbulbSparkle className="bg-[#8CA419] w-10 text-4xl mr-4 border 

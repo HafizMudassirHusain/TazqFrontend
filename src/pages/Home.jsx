@@ -6,15 +6,23 @@ import Testimonials from "../components/HomeComponents/Testimonials";
 import Portfolio from "../components/HomeComponents/Portfolio";
 import CreativeDesigns from "../components/HomeComponents/CreativeDesigns";
 import Contact from "../components/Contact";
-import ParticleBackground from "../components/ParticleBackground"; // Import ParticleBackground
+// import ParticleBackground from "../components/ParticleBackground"; // Import ParticleBackground
+import homeimg from "../assets/home.jpg";
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-screen relative">
+    <div 
+     style={{
+            backgroundImage: `url(${homeimg})`,  // Fixed syntax - removed URL() and used template literal
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover"  // Added to ensure proper image scaling
+          }} 
+    className="flex flex-col items-center justify-center w-full min-h-screen relative">
       {/* Particle Background */}
-      <div className="absolute inset-0 z-10">
+      {/* <div className="absolute inset-0 z-10">
         <ParticleBackground />
-      </div>
+      </div> */}
 
       {/* Hero Section */}
       <div className="relative z-10 w-full">

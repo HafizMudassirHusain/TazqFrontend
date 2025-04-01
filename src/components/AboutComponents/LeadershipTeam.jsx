@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 
 const teamMembers = [
   {
-    name: "John Doe",
+    name: "Muhammmad Asim",
     role: "CEO & Founder",
     img: "https://randomuser.me/api/portraits/men/32.jpg",
     expertise: "Business Strategy & Leadership",
     description: "John is a visionary leader with over 15 years of experience in scaling startups and driving innovation. He specializes in creating sustainable business models and fostering a culture of excellence.",
   },
   {
-    name: "Jane Smith",
+    name: "Mudassir",
     role: "CTO & Tech Lead",
     img: "https://randomuser.me/api/portraits/men/50.jpg",
     expertise: "Software Development & AI",
@@ -53,7 +53,7 @@ const LeadershipTeam = () => {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="w-full bg-[#121212] text-white py-16 px-6 text-center"
+      className="w-full text-white py-16 px-6 text-center"
     >
       <h2 className="text-4xl font-bold text-[#8CA419]">Meet Our Leaders</h2>
       <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">

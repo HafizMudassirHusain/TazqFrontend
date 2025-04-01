@@ -72,7 +72,7 @@ export default function Testimonials() {
   }, [scrollPosition]);
 
   return (
-    <div className="w-[100%] bg-gray-900 text-white py-16 px-12 overflow-hidden">
+    <div className="w-[100%] text-white px-12 overflow-hidden">
       {/* Title Section */}
       <button className="my-10 mx-auto text-xl sm:text-2xl md:text-3xl font-bold text-white px-6 sm:px-8 py-2 flex items-center gap-2 rounded-lg border border-[#8CA419] hover:bg-[#8CA419] transition duration-300">
         <BsStars className="w-8 h-8 sm:w-10 sm:h-10" /> What They Say
@@ -80,7 +80,7 @@ export default function Testimonials() {
       <h2 className="mx-auto w-full sm:w-4/5 md:w-2/3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white">
         What Do The <strong className="text-[#8CA419]">Best Creators</strong> Say About Us?
       </h2>
-      <p className="text-gray-300 text-center mt-4 text-lg max-w-3xl mx-auto">
+      <p className="text-white text-center mt-4 text-lg max-w-3xl mx-auto">
         Our services have been proven effective and are endorsed by top industry
         leaders on LinkedIn. TazQ Sol is the go-to choice for the best creators.
         Hear their success stories directly!
@@ -101,25 +101,25 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-gray-900 p-6 rounded-lg shadow-lg border border-[#8CA419] flex flex-col items-center text-center w-80 min-w-[320px]"
+              className=" p-6 rounded-lg shadow-lg border border-[#8CA419] flex flex-col items-center text-center w-80 min-w-[320px]"
             >
               <img
                 src={testimonial.image}
                 alt={testimonial.name}
                 className="w-20 h-20 rounded-full border-2 border-[#C0C0C0] mb-4"
               />
-              <h3 className="text-xl font-semibold text-[#C0C0C0]">
+              <h3 className="text-xl font-semibold text-white">
                 {testimonial.name}
               </h3>
-              <p className="text-sm text-gray-400">{testimonial.role}</p>
-              <p className="mt-4 text-gray-300">{testimonial.feedback}</p>
+              <p className="text-sm text-white">{testimonial.role}</p>
+              <p className="mt-4 text-white">{testimonial.feedback}</p>
             </div>
           ))}
           {/* Duplicate testimonials for seamless scrolling */}
           {testimonials.map((testimonial, index) => (
             <div
               key={index + testimonials.length}
-              className="bg-gray-900 p-6 rounded-lg shadow-lg border border-[#8CA419] 
+              className=" p-6 rounded-lg shadow-lg border border-[#8CA419] 
               flex flex-col items-center text-center w-80 min-w-[320px]"
             >
               <img
@@ -127,11 +127,11 @@ export default function Testimonials() {
                 alt={testimonial.name}
                 className="w-20 h-20 rounded-full border-2 border-[#C0C0C0] mb-4"
               />
-              <h3 className="text-xl font-semibold text-[#C0C0C0]">
+              <h3 className="text-xl font-semibold text-white">
                 {testimonial.name}
               </h3>
-              <p className="text-sm text-gray-400">{testimonial.role}</p>
-              <p className="mt-4 text-gray-300">{testimonial.feedback}</p>
+              <p className="text-sm text-white">{testimonial.role}</p>
+              <p className="mt-4 text-white">{testimonial.feedback}</p>
             </div>
           ))}
         </div>

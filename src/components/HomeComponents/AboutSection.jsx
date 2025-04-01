@@ -4,7 +4,7 @@ import { BsStars } from "react-icons/bs";
 
 const AboutSection = () => {
   return (
-    <section className="w-full bg-gray-900 text-white  py-20 px-10 flex flex-col lg:flex-row items-center justify-between">
+    <section className="w-full text-white px-10 flex flex-col lg:flex-row items-center justify-between">
       {/* Left Content */}
       <div className="lg:w-1/2 text-center lg:text-left">
 

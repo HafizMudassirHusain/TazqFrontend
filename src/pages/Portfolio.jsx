@@ -1,69 +1,224 @@
-import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { FaEye, FaTimes, FaArrowRight } from "react-icons/fa";
+import { BsStars } from "react-icons/bs";
+import tazqaboutlogo from "../assets/brandingkit/tazqaboutlogo.png";
+import Chip from "../components/HomeComponents/Chip";
+import { useNavigate } from "react-router-dom";
+import homeimg from "../assets/home.jpg";
 
-const Portfolio = () => {
+
+export default function Portfolio() {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [hoveredProject, setHoveredProject] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (selectedProject) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [selectedProject]);
+
   const projects = [
-    {
-      title: "E-Commerce Platform",
-      description: "Developed a scalable e-commerce website with secure payment integration.",
-      industry: "Retail",
-      image: "https://img.freepik.com/free-vector/flat-sale-landing-page-template-with-photo_23-2149028522.jpg",
+    { 
+      category: "Editing", 
+      title: "Video's Editing", 
+      description: "Professional video editing services for content creators and businesses",
+      image: tazqaboutlogo, 
+      btn: "View More Editings" 
     },
-    {
-      title: "Mobile Banking App",
-      description: "Built a user-friendly mobile app for seamless banking transactions.",
-      industry: "Finance",
-      image: "https://yi-files.yellowimages.com/products/1189000/1189396/1982618-full.jpg",
+    { 
+      category: "Marketing", 
+      title: "Digital Marketing", 
+      description: "Comprehensive digital marketing strategies to grow your brand",
+      image: tazqaboutlogo, 
+      btn: "View More digi Marts" 
     },
-    {
-      title: "Healthcare Management System",
-      description: "Implemented a cloud-based solution for patient record management.",
-      industry: "Healthcare",
-      image: "https://media.licdn.com/dms/image/v2/D4D12AQFHJozqdzlpbw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1701187200337?e=2147483647&v=beta&t=aan6rc6yv3GCje85Lc9qGs1vfVLxtSSMqxbL4vCAh-g",
+    { 
+      category: "Design", 
+      title: "UI/UX Design", 
+      description: "Beautiful and intuitive user interfaces designed for optimal experience",
+      image: tazqaboutlogo, 
+      btn: "View More UI/UX" 
+    },
+    { 
+      category: "Marketing", 
+      title: "Social Media Banner", 
+      description: "Eye-catching banners designed to increase engagement on social platforms",
+      image: tazqaboutlogo, 
+      btn: "View More Banners" 
+    },
+    { 
+      category: "Development", 
+      title: "Web And App", 
+      description: "Custom web and mobile applications built with modern technologies",
+      image: tazqaboutlogo, 
+      btn: "View More WebApps" 
+    },
+    { 
+      category: "SEO", 
+      title: "SEO Project", 
+      description: "Search engine optimization services to improve your online visibility",
+      image: tazqaboutlogo, 
+      btn: "View More Seos" 
     },
   ];
 
+  const chipsData = [
+    { image: tazqaboutlogo, name: "John Doe", followers: "50,000+ Followers" },
+    { image: tazqaboutlogo, name: "Jane Smith", followers: "30,000+ Followers" },
+    { image: tazqaboutlogo, name: "Alex Johnson", followers: "45,000+ Followers" },
+    { image: tazqaboutlogo, name: "Sarah Williams", followers: "25,000+ Followers" },
+  ];
+
   return (
-    <section className="py-20 bg-[#121212] mt-20 text-white text-center">
-      <h2 className="text-4xl font-bold mb-6 text-[#8CA419]">Our Portfolio</h2>
-      <p className="text-lg mb-12">Explore our successful projects across various industries.</p>
-      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div 
+     style={{
+                backgroundImage: `url(${homeimg})`,  // Fixed syntax - removed URL() and used template literal
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover"  // Added to ensure proper image scaling
+              }} 
+    className="text-white pt-20 px-4 sm:px-6">
+      {/* Title Section */}
+      <div className="text-center mb-16 max-w-4xl mx-auto">
+        <div className="animate-fade-in">
+          <button className="my-10 mx-auto text-xl sm:text-2xl md:text-3xl font-bold
+           text-white px-6 sm:px-8 py-3 flex items-center gap-2 rounded-full 
+           border-2 border-[#8CA419] hover:bg-[#8CA419] transition-all 
+           duration-300 hover:scale-105 shadow-lg hover:shadow-[#8CA419]/30">
+            <BsStars className="w-6 h-6 sm:w-8 sm:h-8 animate-pulse" /> 
+            <span>Design Portfolio</span>
+          </button>
+        </div>
+        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center
+         text-white mb-6 leading-tight">
+          Our <span className="text-[#8CA419] bg-clip-text 
+          text-transparent bg-gradient-to-r from-[#8CA419] to-[#B8D936]">Work</span> Speaks Volumes
+        </h2>
+        <p className="text-gray-300 text-center max-w-2xl mx-auto text-lg sm:text-xl leading-relaxed">
+          We've collaborated with industry leaders to deliver exceptional results.
+          Explore some of our standout projects below.
+        </p>
+      </div>
+
+      {/* Portfolio Grid */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
         {projects.map((project, index) => (
-          <motion.div
+          <div
             key={index}
-            className="bg-[#1a1a1a] p-6 rounded-lg shadow-lg hover:scale-105 transition-transform"
-            whileHover={{ scale: 1.05 }}
+            className="relative group overflow-hidden rounded-xl transition-all duration-500 hover:scale-[1.02]"
+            onMouseEnter={() => setHoveredProject(index)}
+            onMouseLeave={() => setHoveredProject(null)}
           >
-            <img src={project.image} alt={project.title} className="rounded-md mb-4 w-full h-48 object-cover" />
-            <h3 className="text-2xl font-semibold text-[#C0C0C0]">{project.title}</h3>
-            <p className="text-sm mt-2 text-[#C0C0C0]">{project.industry}</p>
-            <p className="text-lg mt-3">{project.description}</p>
-          </motion.div>
+            <div className="h-full border border-gray-700 rounded-xl overflow-hidden shadow-xl hover:shadow-[#8CA419]/20 transition-all duration-300">
+              {/* Project Image */}
+              <div 
+                className="h-48 bg-cover bg-center relative overflow-hidden"
+                style={{ backgroundImage: `url(${project.image})` }}
+              >
+                <div className={`absolute inset-0 bg-black/70 flex items-center justify-center transition-opacity duration-300 ${hoveredProject === index ? 'opacity-100' : 'opacity-0'}`}>
+                  <button 
+                    onClick={() => setSelectedProject(project)}
+                    className="flex items-center gap-2 px-6 py-2 bg-[#8CA419] 
+                    rounded-full hover:bg-white hover:text-[#8CA419] 
+                    transition-all duration-300 cursor-pointer"
+                  >
+                    <FaEye /> Quick Preview
+                  </button>
+                </div>
+              </div>
+              
+              {/* Project Info */}
+              <div className="p-6">
+                <span className="text-sm font-medium text-[#8CA419] uppercase tracking-wider">
+                  {project.category}
+                </span>
+                <h3 className="text-xl font-bold mt-1 mb-3">{project.title}</h3>
+                <p className="text-gray-300 text-sm mb-4 line-clamp-2">
+                  {project.description}
+                </p>
+                <button
+                  onClick={() => navigate(`/portfolio/${project.category}`, { state: project })}
+                  className="flex items-center gap-2 text-sm font-medium text-[#8CA419] hover:text-white transition-colors duration-300 group"
+                >
+                  {project.btn}
+                  <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
+                </button>
+              </div>
+            </div>
+          </div>
         ))}
       </div>
-      
-      {/* Client Testimonials */}
-      <div className="mt-20">
-        <h3 className="text-3xl font-bold text-[#8CA419]">Client Testimonials</h3>
-        <p className="text-lg mt-4 mb-10">What our clients say about our work</p>
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <motion.div 
-            className="bg-[#1a1a1a] p-6 rounded-lg shadow-lg"
-            whileHover={{ scale: 1.05 }}
-          >
-            <p className="italic">"The TazQ Solution team delivered an outstanding product that transformed our business!"</p>
-            <p className="mt-2 font-semibold text-[#8CA419]">- Sarah, CEO of FinTech Corp</p>
-          </motion.div>
-          <motion.div 
-            className="bg-[#1a1a1a] p-6 rounded-lg shadow-lg"
-            whileHover={{ scale: 1.05 }}
-          >
-            <p className="italic">"Reliable, professional, and innovative! Highly recommended for IT services."</p>
-            <p className="mt-2 font-semibold text-[#8CA419]">- Mark, Founder of HealthTech Solutions</p>
-          </motion.div>
+
+      {/* Testimonials Section */}
+      <div className="mt-28 max-w-7xl mx-auto px-4">
+        <h3 className="text-3xl font-bold text-center mb-12">
+          Trusted by <span className="text-[#8CA419]">Creatives</span> Worldwide
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
+        lg:grid-cols-4 gap-6">
+          {chipsData.map((chip, index) => (
+            <div key={index} className="hover:scale-105 transition-transform 
+            duration-300 mb-20">
+              <Chip
+                image={chip.image}
+                name={chip.name}
+                followers={chip.followers}
+              />
+            </div>
+          ))}
         </div>
       </div>
-    </section>
-  );
-};
 
-export default Portfolio;
+      {/* Popup Modal */}
+      {selectedProject && (
+        <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4 backdrop-blur-sm animate-fade-in">
+          <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-6 sm:p-8 rounded-2xl shadow-2xl relative max-w-4xl w-full border border-[#8CA419]/50">
+            {/* Close Button */}
+            <button
+              onClick={() => setSelectedProject(null)}
+              className="absolute top-4 right-4 text-gray-300 hover:text-white bg-gray-700/50 hover:bg-gray-600/80 rounded-full p-2 transition-all duration-300"
+            >
+              <FaTimes className="w-5 h-5" />
+            </button>
+            
+            {/* Content */}
+            <div className="flex flex-col md:flex-row gap-6">
+              <div className="md:w-1/2">
+                <img
+                  src={selectedProject.image}
+                  alt={selectedProject.title}
+                  className="w-full h-64 sm:h-80 object-cover rounded-xl shadow-lg"
+                />
+              </div>
+              
+              <div className="md:w-1/2">
+                <span className="text-sm font-medium text-[#8CA419] uppercase tracking-wider">
+                  {selectedProject.category}
+                </span>
+                <h3 className="text-2xl font-bold mt-2 mb-4">
+                  {selectedProject.title}
+                </h3>
+                <p className="text-gray-300 mb-6">
+                  {selectedProject.description || "No description available for this project."}
+                </p>
+                <button
+                  onClick={() => {
+                    navigate(`/portfolio/${selectedProject.category}`, { state: selectedProject });
+                    setSelectedProject(null);
+                  }}
+                  className="flex items-center gap-2 px-6 py-3 bg-[#8CA419] rounded-lg hover:bg-white hover:text-[#8CA419] transition-all duration-300 font-medium"
+                >
+                  View Full Project
+                  <FaArrowRight />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

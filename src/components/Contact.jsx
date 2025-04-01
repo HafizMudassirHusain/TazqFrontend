@@ -2,13 +2,29 @@ import React from "react";
 import { BsStars } from "react-icons/bs";
 
 export default function Contact() {
+  // WhatsApp contact function
+  const handleWhatsAppClick = () => {
+    // Replace with your WhatsApp number (include country code, remove any +, 0, or spaces)
+    const phoneNumber = "923122329854"; // Example: Pakistan number 0300 1234567
+    
+    // Message that will be pre-filled
+    const message = "Hello! I'd like to book a consultation call.";
+    
+    // Create WhatsApp link
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    
+    // Open in new tab
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <div className="py-16 w-full">
       {/* Contact Section */}
-        <button className="my-10 mx-auto text-3xl font-bold text-white px-8 py-2 flex items-center gap-2 rounded-lg border border-[#8CA419] hover:bg-[#8CA419] transition duration-300">
+      <button className="my-10 mx-auto text-3xl font-bold text-white px-8 py-2 flex items-center gap-2 rounded-lg border border-[#8CA419] hover:bg-[#8CA419] transition duration-300">
         <BsStars className="w-10 h-10" /> Contact Us
-        </button>
-      <div className="relative  p-8 rounded-lg text-center mx-auto shadow-2xl border-l-4 border-[#8CA419] transform transition-all duration-500  hover:border-[#C0C0C0]">
+      </button>
+      
+      <div className="relative p-8 rounded-lg text-center mx-auto border-l-4 border-[#8CA419] transform transition-all duration-500 hover:border-[#C0C0C0]">
         {/* Decorative Elements */}
         <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-[#8CA419] w-12 h-12 rounded-full flex items-center justify-center shadow-lg">
           <svg
@@ -34,8 +50,14 @@ export default function Contact() {
           Book a free 30-minute consultation call and get access to our personalized branding questionnaire!
         </p>
 
-        {/* Animated Button */}
-        <button className="mt-8 bg-[#8CA419] text-black px-8 py-4 rounded-full font-semibold hover:bg-[#a0c12b] transition-all duration-300 transform hover:scale-110 hover:shadow-lg flex items-center justify-center mx-auto">
+        {/* Updated Button with WhatsApp functionality */}
+        <button 
+          onClick={handleWhatsAppClick}
+          className="mt-8 bg-[#8CA419] text-black px-8 py-4 rounded-full
+           font-semibold hover:bg-[#a0c12b] transition-all duration-300 
+           transform hover:scale-110 hover:shadow-lg flex items-center
+            justify-center mx-auto cursor-pointer"
+        >
           <svg
             className="w-6 h-6 mr-2"
             fill="none"
@@ -52,9 +74,6 @@ export default function Contact() {
           </svg>
           Book a Call
         </button>
-
-        {/* Gradient Background Effect */}
-        {/* <div className="absolute -inset-4 bg-gradient-to-r from-[#8CA419] to-[#C0C0C0] opacity-10 blur-lg rounded-lg -z-10"></div> */}
       </div>
     </div>
   );

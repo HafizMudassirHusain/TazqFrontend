@@ -14,7 +14,7 @@ export default function CreativeDesigns() {
 const naviagte = useNavigate("");
 
   return (
-    <section className="bg-gray-900 w-full text-white py-16 px-6">
+    <section className=" w-full text-white py-16 px-6">
       <div className="max-w-6xl mx-auto text-center">
         {/* Section Title */}
         <div>

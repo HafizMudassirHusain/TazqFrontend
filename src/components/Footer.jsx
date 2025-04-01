@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa"; // Importing React Icons
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope, FaPhone, FaTiktok } from "react-icons/fa"; // Importing React Icons
 
 export default function Footer() {
   return (
@@ -20,22 +20,22 @@ export default function Footer() {
             <h3 className="text-xl font-semibold text-[#C0C0C0] mb-2">Menu</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="#" className="text-gray-400 hover:text-[#8CA419] transition duration-300">
+                <Link to="/" className="text-gray-400 hover:text-[#8CA419] transition duration-300">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-gray-400 hover:text-[#8CA419] transition duration-300">
+                <Link to="/services" className="text-gray-400 hover:text-[#8CA419] transition duration-300">
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-gray-400 hover:text-[#8CA419] transition duration-300">
+                <Link to="/portfolio" className="text-gray-400 hover:text-[#8CA419] transition duration-300">
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-gray-400 hover:text-[#8CA419] transition duration-300">
+                <Link to="/contact" className="text-gray-400 hover:text-[#8CA419] transition duration-300">
                   Contact
                 </Link>
               </li>
@@ -48,11 +48,11 @@ export default function Footer() {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <FaEnvelope className="text-gray-400" />
-                <p className="text-gray-400">contact@tazq.com</p>
+                <p className="text-gray-400">tazqsolutions@gmail.com</p>
               </div>
               <div className="flex items-center space-x-2">
                 <FaPhone className="text-gray-400" />
-                <p className="text-gray-400">+123 456 7890</p>
+                <p className="text-gray-400">+92 312 2329854</p>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ export default function Footer() {
             <h3 className="text-xl font-semibold text-[#C0C0C0] mb-2">Follow Us</h3>
             <div className="flex space-x-4">
               <Link
-                to="#"
+                to="https://www.facebook.com/tazqsolutions"
                 className="text-gray-400 hover:text-[#8CA419] transition duration-300"
               >
                 <FaFacebook size={24} />
@@ -74,16 +74,22 @@ export default function Footer() {
                 <FaTwitter size={24} />
               </Link>
               <Link
-                to="#"
+                to="https://www.instagram.com/tazqsolutions/"
                 className="text-gray-400 hover:text-[#8CA419] transition duration-300"
               >
                 <FaInstagram size={24} />
               </Link>
               <Link
-                to="#"
+                to="https://www.linkedin.com/company/tazqsolutions"
                 className="text-gray-400 hover:text-[#8CA419] transition duration-300"
               >
                 <FaLinkedin size={24} />
+              </Link>
+              <Link
+                to="https://www.tiktok.com/@tazqsolutions"
+                className="text-gray-400 hover:text-[#8CA419] transition duration-300"
+              >
+                <FaTiktok size={24} />
               </Link>
             </div>
           </div>

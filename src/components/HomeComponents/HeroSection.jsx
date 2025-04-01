@@ -10,7 +10,6 @@ import herobgimg from "../../assets/herobgimg.png";
 import ProfileCard from "./ProfileCard";
 
 const HeroSection = () => {
-  
   const creater = [
     { create: creater1 },
     { create: creater2 },
@@ -20,7 +19,10 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="relative text-center mt-16 py-10 sm:py-20 h-auto min-h-[600px] sm:min-h-[800px] w-full flex flex-col items-center px-4">
+    <section
+      className="relative text-center mt-16 py-10 sm:py-20 h-auto min-h-[600px] sm:min-h-[800px] w-full flex flex-col items-center px-4"
+    >
+      {/* Rest of your component remains the same */}
       {/* Floating Profile Cards (Responsive Positioning) */}
       <div className="hidden lg:block absolute top-20 right-10">
         <ProfileCard imgSrc={c1} />

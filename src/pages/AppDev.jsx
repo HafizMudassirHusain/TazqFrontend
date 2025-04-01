@@ -250,7 +250,7 @@ const AppDev = () => {
   const handleContactUs = (plan) => {
     const message = `Hi, I'm interested in the ${plan.title} plan (${plan.category}). Can you provide more details?`;
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/923366469656?text=${encodedMessage}`; // Replace with your WhatsApp number
+    const whatsappUrl = `https://wa.me/923122329854?text=${encodedMessage}`; // Replace with your WhatsApp number
     window.open(whatsappUrl, "_blank");
   };
 

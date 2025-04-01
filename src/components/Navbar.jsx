@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full bg-black text-white p-3 sm:p-4 fixed top-0 shadow-lg z-50">
+    <nav className="w-full text-white p-3 sm:p-4 fixed top-0 shadow-lg z-50">
       <div className="container mx-auto flex justify-between items-center h-16">
         {/* Logo and Brand Name */}
         <div className="flex items-center">
@@ -82,7 +82,7 @@ const Navbar = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="md:hidden flex flex-col items-center py-4 space-y-4 text-lg font-semibold bg-black shadow-lg"
+          className="md:hidden flex flex-col items-center py-4 space-y-4 text-lg font-semibold shadow-lg"
         >
           <Link
             to="/"

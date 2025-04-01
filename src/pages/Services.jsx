@@ -6,6 +6,7 @@ import { BiSolidBookContent } from "react-icons/bi";
 import { MdOutlineLocalGroceryStore } from "react-icons/md";
 import { PiVideoFill } from "react-icons/pi";
 import { useNavigate } from "react-router-dom";
+import homeimg from '../assets/home.jpg'
 
 const services = [
   { icon: <FaLaptopCode size={40} />,  title: "Web Development", desc: "Stunning, responsive websites tailored to your needs.", link: "/webdevelopprice" },
@@ -20,7 +21,13 @@ const Services = () => {
 const navigate = useNavigate("");
 
   return (
-    <section className="py-20 text-white">
+    <section className="py-20 text-white"
+    style={{
+                    backgroundImage: `url(${homeimg})`,  // Fixed syntax - removed URL() and used template literal
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover"  // Added to ensure proper image scaling
+                  }} >
       <div className="container mx-auto text-center px-4 sm:px-6 lg:px-8 my-20">
         <h2 className="text-4xl font-bold text-[#8CA419]">Our IT Services</h2>
         <p className="mt-4 text-lg text-[#C0C0C0]">We provide a wide range of IT solutions to help your business thrive.</p>
@@ -29,7 +36,7 @@ const navigate = useNavigate("");
           {services.map((service, index) => (
             <motion.div 
               key={index}
-              className="border border-[#8CA419] rounded-xl p-6 bg-gradient-to-br from-[#1E1E1E] to-[#2C2C2C] flex flex-col gap-6 hover:shadow-lg hover:shadow-[#8CA419]/30 transition-all duration-300"
+              className="border border-[#8CA419] rounded-xl p-6  flex flex-col gap-6 hover:shadow-lg hover:shadow-[#8CA419]/30 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >

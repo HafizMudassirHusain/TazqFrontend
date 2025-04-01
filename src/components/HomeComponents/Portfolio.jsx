@@ -6,7 +6,7 @@ import Chip from "./Chip";
 import { useNavigate } from "react-router-dom";
 
 
-export default function Portfolio() {
+export default function HomePortfolio() {
   const [selectedProject, setSelectedProject] = useState(null); // State for modal
   const navigate = useNavigate();
   // Disable body scroll when modal is open
@@ -35,7 +35,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="text-white py-20 px-6">
+    <div className="text-white pt-20 px-6">
       {/* Title Section */}
       <div className="text-center mb-16">
         <div>
