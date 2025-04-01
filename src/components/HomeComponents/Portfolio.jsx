@@ -40,15 +40,15 @@ export default function HomePortfolio() {
       <div className="text-center mb-16">
         <div>
           <button className="my-10 mx-auto text-xl sm:text-2xl md:text-3xl font-bold text-white px-6 sm:px-8 py-2 flex items-center gap-2 rounded-lg border border-[#8CA419] hover:bg-[#8CA419] transition duration-300">
-            <BsStars className="w-8 h-8 sm:w-10 sm:h-10" /> Design Portfolio
+            <BsStars className="w-8 h-8 sm:w-10 sm:h-10" /> Work Collection
           </button>
         </div>
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center text-white mb-4">
-          Our <span className="text-[#8CA419]">Work</span> Speaks for Itself
+          The <span className="text-[#8CA419]">Work</span> We Did for Our Clients
         </h2>
         <p className="text-gray-300 text-center max-w-2xl mx-auto text-lg">
-          We've collaborated with industry leaders to deliver exceptional results.
-          Explore some of our standout projects below.
+        We've had the privilege of working with some of the most recognized names in the industry. You’ve
+        probably seen our work on LinkedIn. Helping brands grow, connect, and stand out.
         </p>
       </div>
 

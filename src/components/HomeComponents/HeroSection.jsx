@@ -27,7 +27,7 @@ const HeroSection = () => {
       <div className="hidden lg:block absolute top-20 right-10">
         <ProfileCard imgSrc={c1} />
       </div>
-      <div className="hidden md:block absolute left-10 top-[70%] transform -translate-y-1/2">
+      <div className="hidden md:block absolute left-10 top-[80%] transform -translate-y-1/2">
         <ProfileCard imgSrc={c2} />
       </div>
       <div className="hidden md:block absolute bottom-5 right-10">
@@ -39,7 +39,7 @@ const HeroSection = () => {
       </div>
 
       {/* Avatar Row */}
-      <div className="flex justify-center items-center space-x-[-10px] mt-10 sm:mt-20 mb-4">
+      {/* <div className="flex justify-center items-center space-x-[-10px] mt-10 sm:mt-20 mb-4">
         {creater.map((data, index) => (
           <img
             key={index}
@@ -52,16 +52,18 @@ const HeroSection = () => {
           Trusted By The{" "}
           <strong className="text-[#8CA419]">Best Creators</strong>
         </h2>
-      </div>
+      </div> */}
 
       {/* Heading & Description */}
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold w-[90%] sm:w-[80%] md:w-[70%] mx-auto text-white leading-tight mt-6 sm:mt-10">
-        The <strong className="text-[#8CA419]">Creative Origin</strong> Of Your
-        Brand's Identity
+      <h1 className="pt-16 text-3xl sm:text-4xl md:text-5xl 
+      lg:text-6xl xl:text-7xl font-bold w-[90%] sm:w-[80%] md:w-[70%] 
+      mx-auto text-white leading-tight sm:mt-10">
+      Grow Your Business with <strong className="text-[#8CA419]">Top-Notch</strong> IT Services
       </h1>
-      <p className="text-base sm:text-lg md:text-xl font-semibold mt-4 max-w-2xl mx-auto text-[#C0C0C0]">
-        Is your brand lost in the sea of generic designs? Take hold of the
-        Primordial toolkit and make your brand stand out!
+      <p className="text-base sm:text-lg md:text-xl font-semibold 
+      max-w-2xl mx-auto mt-10 text-[#C0C0C0]">
+      Struggling to scale your business? What if expert IT solutions
+       handled the workload. So you could focus on growth and success?
       </p>
 
       {/* CTA Button */}

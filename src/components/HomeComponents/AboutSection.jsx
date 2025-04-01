@@ -15,19 +15,24 @@ const AboutSection = () => {
           TazQ Solution Creator
         </h2>
         <p className="text-lg mt-4 text-white text-left max-w-lg">
-          Brand owners & CEOs often face the challenge of dedicating sufficient time to <em className="text-[#8CA419]">effective brand design</em>, diverting their attention from critical areas of their business.
-        </p>
+        At TazQ Solution, we are a team of IT experts, designers, content
+         strategists, and developers dedicated to delivering high-quality 
+         digital solutions that fuel business growth.      
+           </p>
         <p className="text-lg mt-4 text-white text-left max-w-lg">
-          TazQ Sloution this by <em className="text-[#8CA419]">providing expert design services</em> , freeing up valuable hours for clients to focus on high-impact business development initiatives.
-        </p>
+        With cutting-edge design, compelling content, seamless development, and 
+        powerful marketing strategies, we help brands stand out, scale, and 
+        succeed in the competitive digital landscape.        </p>
         <p className="text-lg mt-4 text-white text-left max-w-lg">
-          This strategic approach enables clients to optimize their time & <em className="text-[#8CA419]">maximize business growth!</em>
-        </p>
+        Our motive is simple: 'Why settle for ordinary when you can achieve 
+        extraordinary?' We design, develop, and dominate your brand to
+         new heights.       
+          </p>
 
       </div>
 
       {/* Right Image */}
-      <div className="lg:w-1/2 h-[40vh]  flex justify-center mt-10 lg:mt-0">
+      <div className="lg:w-1/2 h-[30vh] flex justify-center mt-10 lg:mt-0">
         <img
           src={tazqaboutlogo}
           alt="TazQ Solution Logo"

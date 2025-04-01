@@ -78,12 +78,11 @@ export default function Testimonials() {
         <BsStars className="w-8 h-8 sm:w-10 sm:h-10" /> What They Say
       </button>
       <h2 className="mx-auto w-full sm:w-4/5 md:w-2/3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white">
-        What Do The <strong className="text-[#8CA419]">Best Creators</strong> Say About Us?
+      Why <strong className="text-[#8CA419]">Top Creators</strong> Trust TazQ Solution?
       </h2>
       <p className="text-white text-center mt-4 text-lg max-w-3xl mx-auto">
-        Our services have been proven effective and are endorsed by top industry
-        leaders on LinkedIn. TazQ Sol is the go-to choice for the best creators.
-        Hear their success stories directly!
+      It’s simple: We help them stand out, work smarter, and grow faster. But don’t just take our word for it
+      —see what our satisfied clients have to say!
       </p>
 
       {/* Scrolling Testimonials Container */}

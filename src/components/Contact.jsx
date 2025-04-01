@@ -21,7 +21,7 @@ export default function Contact() {
     <div className="py-16 w-full">
       {/* Contact Section */}
       <button className="my-10 mx-auto text-3xl font-bold text-white px-8 py-2 flex items-center gap-2 rounded-lg border border-[#8CA419] hover:bg-[#8CA419] transition duration-300">
-        <BsStars className="w-10 h-10" /> Contact Us
+        <BsStars className="w-10 h-10" /> Let's Connect!
       </button>
       
       <div className="relative p-8 rounded-lg text-center mx-auto border-l-4 border-[#8CA419] transform transition-all duration-500 hover:border-[#C0C0C0]">
@@ -43,12 +43,14 @@ export default function Contact() {
           </svg>
         </div>
 
-        <h2 className="text-4xl font-bold text-[#8CA419] mb-4">
-          Want To Get In Touch With Us?
+        <h2 className="text-xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl
+         font-bold text-[#8CA419] mb-4 w-full sm:w-4/5 md:w-3/4 mx-auto text-center">
+        Have questions or need expert guidance?
         </h2>
         <p className="text-white text-lg mt-4 max-w-2xl mx-auto">
-          Book a free 30-minute consultation call and get access to our personalized branding questionnaire!
-        </p>
+        Book a free 30-minute consultation and get a personalized branding questionnaire to kickstart your
+        success.       
+         </p>
 
         {/* Updated Button with WhatsApp functionality */}
         <button 
