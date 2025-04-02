@@ -1,87 +1,107 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaTwitter, FaSeedling } from "react-icons/fa";
+import shifa from '../../assets/tazqteam/shifa.jpg';
+// import hamza from '../../assets/tazqteam/hamza.jpg'
+import ariba from '../../assets/tazqteam/ariba.jpg'
+import aswad from '../../assets/tazqteam/aswad.jpg'
+import subhan from '../../assets/tazqteam/subhan.jpg'
+// import mishgaan from '../../assets/tazqteam/mishgaan.jpg'
+// import haris from '../../assets/tazqteam/haris.jpg'
 
 const JuniorTeamMembers = [
-    {
-      name: "Sarah Johnson",
-      role: "Frontend Developer",
-      img: "https://randomuser.me/api/portraits/women/44.jpg",
-      skills: ["React", "TypeScript", "Tailwind CSS"],
-      funFact: "Avid rock climber and photography enthusiast",
-      progress: 85,
-      socials: {
-        linkedin: "#",
-        github: "#"
-      },
-      mentoredBy: "Jinnefer (Senior Developer)"
+  {
+    name: "Shifa Shaique",
+    role: "Marketing",
+    img: shifa,
+    skills: ["Social Media", "Content Creation", "Market Research"],
+    tagLine: "Strategic Marketing for Lasting Business Growth at TazQSolutions",
+    progress: 85,
+    socials: {
+      linkedin: "#",
+      github: "#"
     },
-    {
-      name: "David Kim",
-      role: "Backend Intern",
-      img: "https://randomuser.me/api/portraits/men/22.jpg",
-      skills: ["Node.js", "Python", "Docker"],
-      funFact: "Competitive chess player with 3 state championships",
-      progress: 72,
-      socials: {
-        linkedin: "#",
-        twitter: "#"
-      },
-      mentoredBy: "Mudassir (CTO)"
+    mentoredBy: "Angelina (Marketing Head)"
+  },
+  {
+    name: "Muhammad Hamza Arshad",
+    role: "Marketing Associate",
+    img:  "https://randomuser.me/api/portraits/men/22.jpg",
+    skills: ["Digital Marketing", "SEO", "Brand Strategy"],
+    tagLine: "Strategic Marketing for Lasting Business Growth at TazQSolutions",
+    progress: 72,
+    socials: {
+      linkedin: "#",
+      twitter: "#"
     },
-    {
-      name: "Emma Rodriguez",
-      role: "Marketing Associate",
-      img: "https://randomuser.me/api/portraits/women/63.jpg",
-      skills: ["Social Media", "SEO", "Content Strategy"],
-      funFact: "Runs a food blog with 10k monthly readers",
-      progress: 68,
-      socials: {
-        linkedin: "#",
-        twitter: "#"
-      },
-      mentoredBy: "Angelina (Marketing Head)"
+    mentoredBy: "Angelina (Marketing Head)"
+  },
+  {
+    name: "Ariba Lakho",
+    role: "Marketing Associate",
+    img: ariba,
+    skills: ["Social Media", "SEO", "Content Strategy"],
+    tagLine: "Building Connections, Creating Impactful Experiences at TazQSolutions",
+    progress: 68,
+    socials: {
+      linkedin: "#",
+      twitter: "#"
     },
-    {
-      name: "James Wilson",
-      role: "UX Designer",
-      img: "https://randomuser.me/api/portraits/men/41.jpg",
-      skills: ["Figma", "User Research", "Prototyping"],
-      funFact: "Former esports competitor turned designer",
-      progress: 79,
-      socials: {
-        linkedin: "#",
-        dribbble: "#"
-      },
-      mentoredBy: "Alexa (Creative Director)"
+    mentoredBy: "Angelina (Marketing Head)"
+  },
+  {
+    name: "Aswad Raza Siddiqui",
+    role: "Business Development",
+    img: aswad,
+    skills: ["Networking", "Sales", "Client Relations"],
+    tagLine: "Connecting Opportunities, Building Relationships, Driving Growth at TazQSolutions",
+    progress: 79,
+    socials: {
+      linkedin: "#",
+      dribbble: "#"
     },
-    {
-      name: "Olivia Chen",
-      role: "Data Analyst",
-      img: "https://randomuser.me/api/portraits/women/33.jpg",
-      skills: ["SQL", "Tableau", "Machine Learning"],
-      funFact: "Can solve a Rubik's cube in under 90 seconds",
-      progress: 88,
-      socials: {
-        linkedin: "#",
-        github: "#"
-      },
-      mentoredBy: "Michael Lee (Head of Ops)"
+    mentoredBy: "Michael Lee (Head of Ops)"
+  },
+  {
+    name: "Subhan Abbasi",
+    role: "Business Development",
+    img: subhan,
+    skills: ["Partnerships", "Market Analysis", "Outreach"],
+    tagLine: "Connecting Opportunities, Building Relationships, Driving Growth at TazQSolutions",
+    progress: 88,
+    socials: {
+      linkedin: "#",
+      github: "#"
     },
-    {
-      name: "Ryan Park",
-      role: "DevOps Trainee",
-      img: "https://randomuser.me/api/portraits/men/28.jpg",
-      skills: ["AWS", "Terraform", "CI/CD"],
-      funFact: "Bass player in a local indie band",
-      progress: 65,
-      socials: {
-        linkedin: "#",
-        github: "#"
-      },
-      mentoredBy: "Jinnefer (Senior Developer)"
-    }
-  ];
+    mentoredBy: "Michael Lee (Head of Ops)"
+  },
+  {
+    name: "Mishgaan Jamal",
+    role: "Graphic Designer",
+    img:  "https://randomuser.me/api/portraits/women/28.jpg",
+    skills: ["Adobe Creative Suite", "Branding", "Visual Design"],
+    tagLine: "Transforming Ideas into Stunning Visual Experiences at TazQ Solutions",
+    progress: 65,
+    socials: {
+      linkedin: "#",
+      behance: "#"
+    },
+    mentoredBy: "Alexa (Creative Director)"
+  },
+  {
+    name: "Haris Jamal",
+    role: "UI/UX Designer",
+    img: "https://randomuser.me/api/portraits/men/29.jpg",
+    skills: ["Figma", "User Research", "Prototyping"],
+    tagLine: "Transforming Ideas into Stunning Visual Experiences at TazQ Solutions",
+    progress: 70,
+    socials: {
+      linkedin: "#",
+      dribbble: "#"
+    },
+    mentoredBy: "Alexa (Creative Director)"
+  }
+];
 const InfiniteScrollJuniorTeam = () => {
   const scrollerRef = useRef(null);
   const contentRef = useRef(null);
@@ -245,8 +265,8 @@ const InfiniteScrollJuniorTeam = () => {
 
                 <div className="bg-[#333] bg-opacity-50 p-4 rounded-lg">
                   <p className="text-sm text-[#C0C0C0]">
-                    <span className="text-[#8CA419] font-medium">Fun Fact:</span>{" "}
-                    {member.funFact}
+                    <span className="text-[#8CA419] font-medium">Tag Fact:</span>{" "}
+                    {member.tagLine}
                   </p>
                 </div>
               </div>

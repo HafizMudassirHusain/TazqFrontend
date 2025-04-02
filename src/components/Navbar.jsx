@@ -29,31 +29,36 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-6 lg:space-x-8 text-lg font-semibold">
           <Link
             to="/"
-            className="border border-[#8CA419] px-2 py-1 hover:text-[#8CA419] transition duration-300"
+            className="border border-[#8CA419] rounded-md px-2
+             py-1 hover:text-[#8CA419] transition duration-300"
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="border border-[#8CA419] px-2 py-1 hover:text-[#8CA419] transition duration-300"
+            className="border border-[#8CA419] rounded-md px-2 
+            py-1 hover:text-[#8CA419] transition duration-300"
           >
             About
           </Link>
           <Link
             to="/services"
-            className="border border-[#8CA419] px-2 py-1 hover:text-[#8CA419] transition duration-300"
+            className="border border-[#8CA419] px-2 py-1 rounded-md
+            hover:text-[#8CA419] transition duration-300"
           >
             Services
           </Link>
           <Link
             to="/portfolio"
-            className="border border-[#8CA419] px-2 py-1 hover:text-[#8CA419] transition duration-300"
+            className="border border-[#8CA419] px-2 py-1 rounded-md
+             hover:text-[#8CA419] transition duration-300"
           >
             Portfolio
           </Link>
           <Link
             to="/contact"
-            className="border border-[#8CA419] px-2 py-1 hover:text-[#8CA419] transition duration-300"
+            className="border border-[#8CA419] px-2 py-1 rounded-md
+             hover:text-[#8CA419] transition duration-300"
           >
             Contact
           </Link>
