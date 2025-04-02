@@ -87,34 +87,55 @@ const Home = () => {
   <div className="relative group">
     {/* Main button - now with proper click handling */}
     <motion.button
-      onClick={() => {
-        console.log("Chat button clicked!"); // Debugging
-        handleWhatsAppClick(); // Make sure this function exists in scope
-      }}
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.9 }}
-      transition={{ 
-        type: "spring",
-        damping: 15,
-        stiffness: 400
-      }}
-      className="flex items-center justify-center h-14 w-14 rounded-full 
-                bg-gradient-to-br from-[#8CA419] to-[#bbda22] shadow-lg
-                hover:shadow-xl transition-all duration-300 cursor-pointer"
-      animate={{
-        boxShadow: [
-          "0 4px 14px rgba(16, 185, 129, 0.3)",
-          "0 6px 20px rgba(16, 185, 129, 0.4)",
-          "0 4px 14px rgba(16, 185, 129, 0.3)"
-        ]
-      }}
-      transition={{
-        duration: 2,
-        repeat: Infinity
-      }}
-    >
-      <FaCommentDots className="text-white text-xl" />
-    </motion.button>
+  onClick={handleWhatsAppClick}
+  initial={{ opacity: 0, scale: 0.8 }}
+  animate={{
+    opacity: 1,
+    scale: 1,
+    boxShadow: [
+      "0 4px 14px rgba(16, 185, 129, 0.3)",
+      "0 6px 20px rgba(16, 185, 129, 0.4)",
+      "0 4px 14px rgba(16, 185, 129, 0.3)"
+    ]
+  }}
+  whileHover={{
+    scale: 1.1,
+    boxShadow: "0 10px 20px rgba(16, 185, 129, 0.4)"
+  }}
+  whileTap={{ scale: 0.9 }}
+  transition={{
+    // Spring physics for scale/position animations
+    type: "spring",
+    stiffness: 400,
+    damping: 15,
+    // Special configuration for boxShadow animation
+    boxShadow: {
+      duration: 2,
+      repeat: Infinity,
+      repeatType: "loop",
+      ease: "easeInOut"
+    }
+  }}
+  className="flex items-center justify-center h-14 w-14 rounded-full 
+            bg-gradient-to-br from-emerald-400 to-teal-600 shadow-lg
+            hover:shadow-xl cursor-pointer relative"
+>
+  <FaCommentDots className="text-white text-xl" />
+  
+  {/* Ping animation as separate element */}
+  <motion.span
+    className="absolute inset-0 rounded-full border-2 border-emerald-300 pointer-events-none"
+    animate={{
+      scale: [1, 1.4],
+      opacity: [0.7, 0]
+    }}
+    transition={{
+      duration: 2,
+      repeat: Infinity,
+      ease: "easeOut"
+    }}
+  />
+</motion.button>
 
     {/* Tooltip remains the same */}
     <div className="absolute right-16 top-1/2 -translate-y-1/2 px-3 py-2 
