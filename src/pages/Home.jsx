@@ -8,7 +8,7 @@ import CreativeDesigns from "../components/HomeComponents/CreativeDesigns";
 import Contact from "../components/Contact";
 // import ParticleBackground from "../components/ParticleBackground"; // Import ParticleBackground
 import homeimg from "../assets/home.jpg";
-import { FaCommentDots } from "react-icons/fa";
+import { FaCommentDots, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -117,10 +117,10 @@ const Home = () => {
     }
   }}
   className="flex items-center justify-center h-14 w-14 rounded-full 
-            bg-gradient-to-br from-emerald-400 to-teal-600 shadow-lg
+            bg-gradient-to-br from-[#8CA419] to-[#434e11] shadow-lg
             hover:shadow-xl cursor-pointer relative"
 >
-  <FaCommentDots className="text-white text-xl" />
+  <FaWhatsapp className="text-white text-2xl" />
   
   {/* Ping animation as separate element */}
   <motion.span
@@ -149,7 +149,7 @@ const Home = () => {
 
     {/* Ping animation remains the same */}
     <motion.div
-      className="absolute inset-0 border-2 border-emerald-300 rounded-full pointer-events-none"
+      className="absolute inset-0 border-2 border-[#8CA419] rounded-full pointer-events-none"
       animate={{
         scale: [1, 1.4],
         opacity: [0.7, 0]

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaEye, FaTimes, FaArrowRight } from "react-icons/fa";
 import { BsStars } from "react-icons/bs";
 import tazqaboutlogo from "../assets/brandingkit/tazqaboutlogo.png";
-import Chip from "../components/HomeComponents/Chip";
+// import Chip from "../components/HomeComponents/Chip";
 import { useNavigate } from "react-router-dom";
 import homeimg from "../assets/home.jpg";
 
@@ -153,7 +153,7 @@ export default function Portfolio() {
       </div>
 
       {/* Testimonials Section */}
-      <div className="mt-28 max-w-7xl mx-auto px-4">
+      {/* <div className="mt-28 max-w-7xl mx-auto px-4">
         <h3 className="text-3xl font-bold text-center mb-12">
           Trusted by <span className="text-[#8CA419]">Creatives</span> Worldwide
         </h3>
@@ -170,12 +170,12 @@ export default function Portfolio() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Popup Modal */}
       {selectedProject && (
         <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4 backdrop-blur-sm animate-fade-in">
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-6 sm:p-8 rounded-2xl shadow-2xl relative max-w-4xl w-full border border-[#8CA419]/50">
+          <div className="bg-gradient-to-br from-[#171B1E] to-[#0f1113] p-6 sm:p-8 rounded-2xl shadow-2xl relative max-w-4xl w-full border border-[#8CA419]/50">
             {/* Close Button */}
             <button
               onClick={() => setSelectedProject(null)}

@@ -2,65 +2,65 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaTwitter, FaSeedling } from "react-icons/fa";
 import shifa from '../../assets/tazqteam/shifa.jpg';
-// import hamza from '../../assets/tazqteam/hamza.jpg'
+import hamza from '../../assets/tazqteam/hamza.jpg'
 import ariba from '../../assets/tazqteam/ariba.jpg'
 import aswad from '../../assets/tazqteam/aswad.jpg'
 import subhan from '../../assets/tazqteam/subhan.jpg'
-// import mishgaan from '../../assets/tazqteam/mishgaan.jpg'
-// import haris from '../../assets/tazqteam/haris.jpg'
+import mishgaan from '../../assets/tazqteam/mishgaan.jpg'
+import haris from '../../assets/tazqteam/haris.jpg'
 
 const JuniorTeamMembers = [
   {
     name: "Shifa Shaique",
     role: "Marketing",
     img: shifa,
-    skills: ["Social Media", "Content Creation", "Market Research"],
+    skills: ["Social Media", "Market Research"],
     tagLine: "Strategic Marketing for Lasting Business Growth at TazQSolutions",
-    progress: 85,
-    socials: {
-      linkedin: "#",
-      github: "#"
-    },
-    mentoredBy: "Angelina (Marketing Head)"
+    // progress: 85,
+    // socials: {
+    //   linkedin: "#",
+    //   github: "#"
+    // },
+    // mentoredBy: "Angelina (Marketing Head)"
   },
   {
-    name: "Muhammad Hamza Arshad",
+    name: "Muhammad Hamza",
     role: "Marketing Associate",
-    img:  "https://randomuser.me/api/portraits/men/22.jpg",
-    skills: ["Digital Marketing", "SEO", "Brand Strategy"],
+    img:  hamza,
+    skills: ["Digital Marketing", "Brand Strategy"],
     tagLine: "Strategic Marketing for Lasting Business Growth at TazQSolutions",
-    progress: 72,
-    socials: {
-      linkedin: "#",
-      twitter: "#"
-    },
-    mentoredBy: "Angelina (Marketing Head)"
+    // progress: 72,
+    // socials: {
+    //   linkedin: "#",
+    //   twitter: "#"
+    // },
+    // mentoredBy: "Angelina (Marketing Head)"
   },
   {
     name: "Ariba Lakho",
     role: "Marketing Associate",
     img: ariba,
-    skills: ["Social Media", "SEO", "Content Strategy"],
+    skills: ["Social Media", "Content Strategy"],
     tagLine: "Building Connections, Creating Impactful Experiences at TazQSolutions",
-    progress: 68,
-    socials: {
-      linkedin: "#",
-      twitter: "#"
-    },
-    mentoredBy: "Angelina (Marketing Head)"
+    // progress: 68,
+    // socials: {
+    //   linkedin: "#",
+    //   twitter: "#"
+    // },
+    // mentoredBy: "Angelina (Marketing Head)"
   },
   {
-    name: "Aswad Raza Siddiqui",
+    name: "Aswad Raza",
     role: "Business Development",
     img: aswad,
     skills: ["Networking", "Sales", "Client Relations"],
     tagLine: "Connecting Opportunities, Building Relationships, Driving Growth at TazQSolutions",
-    progress: 79,
-    socials: {
-      linkedin: "#",
-      dribbble: "#"
-    },
-    mentoredBy: "Michael Lee (Head of Ops)"
+    // progress: 79,
+    // socials: {
+    //   linkedin: "#",
+    //   dribbble: "#"
+    // },
+    // mentoredBy: "Michael Lee (Head of Ops)"
   },
   {
     name: "Subhan Abbasi",
@@ -68,38 +68,38 @@ const JuniorTeamMembers = [
     img: subhan,
     skills: ["Partnerships", "Market Analysis", "Outreach"],
     tagLine: "Connecting Opportunities, Building Relationships, Driving Growth at TazQSolutions",
-    progress: 88,
-    socials: {
-      linkedin: "#",
-      github: "#"
-    },
-    mentoredBy: "Michael Lee (Head of Ops)"
+    // progress: 88,
+    // socials: {
+    //   linkedin: "#",
+    //   github: "#"
+    // },
+    // mentoredBy: "Michael Lee (Head of Ops)"
   },
   {
     name: "Mishgaan Jamal",
     role: "Graphic Designer",
-    img:  "https://randomuser.me/api/portraits/women/28.jpg",
+    img:  mishgaan,
     skills: ["Adobe Creative Suite", "Branding", "Visual Design"],
     tagLine: "Transforming Ideas into Stunning Visual Experiences at TazQ Solutions",
-    progress: 65,
-    socials: {
-      linkedin: "#",
-      behance: "#"
-    },
-    mentoredBy: "Alexa (Creative Director)"
+    // progress: 65,
+    // socials: {
+    //   linkedin: "#",
+    //   behance: "#"
+    // },
+    // mentoredBy: "Alexa (Creative Director)"
   },
   {
     name: "Haris Jamal",
     role: "UI/UX Designer",
-    img: "https://randomuser.me/api/portraits/men/29.jpg",
-    skills: ["Figma", "User Research", "Prototyping"],
+    img: haris,
+    skills: ["Figma", "Prototyping"],
     tagLine: "Transforming Ideas into Stunning Visual Experiences at TazQ Solutions",
-    progress: 70,
-    socials: {
-      linkedin: "#",
-      dribbble: "#"
-    },
-    mentoredBy: "Alexa (Creative Director)"
+    // progress: 70,
+    // socials: {
+    //   linkedin: "#",
+    //   dribbble: "#"
+    // },
+    // mentoredBy: "Alexa (Creative Director)"
   }
 ];
 const InfiniteScrollJuniorTeam = () => {
@@ -204,8 +204,9 @@ const InfiniteScrollJuniorTeam = () => {
               transition={{ delay: index * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
               whileHover={{ y: 0 }}
-              className="w-[320px] flex-shrink-0 rounded-xl overflow-hidden
-               border border-[#333] hover:border-[#8CA419] transition-all duration-300 shadow-lg"
+              className="w-[320px] h-1/2 flex-shrink-0 rounded-xl overflow-hidden
+               border border-[#333] hover:border-[#8CA419] transition-all
+                duration-300 shadow-lg"
             >
               {/* Card Content */}
               <div className="p-6 pb-0">
@@ -221,20 +222,20 @@ const InfiniteScrollJuniorTeam = () => {
                       {member.name}
                     </h3>
                     <p className="text-[#8CA419] text-sm">{member.role}</p>
-                    {member.mentoredBy && (
+                    {/* {member.mentoredBy && (
                       <p className="text-xs text-[#C0C0C0] mt-1">
                         Mentored by:{" "}
                         <span className="text-[#8CA419]">
                           {member.mentoredBy}
                         </span>
                       </p>
-                    )}
+                    )} */}
                   </div>
                 </div>
               </div>
 
               <div className="p-6 pt-4">
-                <div className="mb-4">
+                {/* <div className="mb-4">
                   <div className="flex justify-between text-xs text-[#C0C0C0] mb-1">
                     <span>Skill progress</span>
                     <span>{member.progress}%</span>
@@ -245,9 +246,9 @@ const InfiniteScrollJuniorTeam = () => {
                       style={{ width: `${member.progress}%` }}
                     ></div>
                   </div>
-                </div>
+                </div> */}
 
-                <div className="mb-5">
+                {/* <div className="mb-5">
                   <h4 className="text-sm font-semibold text-[#C0C0C0] mb-2">
                     Core Skills:
                   </h4>
@@ -261,17 +262,17 @@ const InfiniteScrollJuniorTeam = () => {
                       </span>
                     ))}
                   </div>
-                </div>
+                </div> */}
 
                 <div className="bg-[#333] bg-opacity-50 p-4 rounded-lg">
-                  <p className="text-sm text-[#C0C0C0]">
-                    <span className="text-[#8CA419] font-medium">Tag Fact:</span>{" "}
+                  <p className="text-sm text-center text-[#C0C0C0]">
+                    {/* <span className="text-[#8CA419] font-medium">Tag Fact:</span>{" "} */}
                     {member.tagLine}
                   </p>
                 </div>
               </div>
 
-              <div className="px-6 py-3 bg-[#333] bg-opacity-30 flex justify-between items-center">
+              {/* <div className="px-6 py-3 bg-[#333] bg-opacity-30 flex justify-between items-center">
                 <div className="flex space-x-3">
                   {member.socials.linkedin && (
                     <a
@@ -304,7 +305,7 @@ const InfiniteScrollJuniorTeam = () => {
                 <span className="text-xs text-[#8CA419]">
                   #{member.role.split(" ")[0].toLowerCase()}
                 </span>
-              </div>
+              </div> */}
             </motion.div>
           ))}
         </motion.div>

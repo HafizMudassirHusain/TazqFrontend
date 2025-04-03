@@ -9,9 +9,9 @@ export default function TazqSol() {
     "Outdated marketing materials are holding your business back.",
     "You need a creative partner to bring your vision to life.",
     "Your website fails to engage visitors or drive conversions.",
-    "Inconsistent social media branding is costing you credibility.",
-    "Your brand needs a refresh to stay ahead of the competition.",
-    "Your messaging isn't resonating with your target audience.",
+    // "Inconsistent social media branding is costing you credibility.",
+    // "Your brand needs a refresh to stay ahead of the competition.",
+    // "Your messaging isn't resonating with your target audience.",
   ];
 
   const solutions = [
@@ -20,9 +20,9 @@ export default function TazqSol() {
     "Designing high-quality marketing materials that capture attention.",
     "Partnering with you to bring your creative vision to life.",
     "Developing a visually stunning website that turns visitors into customers.",
-    "Ensuring consistent, engaging branding across all social platforms.",
-    "Strategizing a rebranding approach that keeps you ahead of the curve.",
-    "Refining your messaging to create a deep connection with your audience.",
+    // "Ensuring consistent, engaging branding across all social platforms.",
+    // "Strategizing a rebranding approach that keeps you ahead of the curve.",
+    // "Refining your messaging to create a deep connection with your audience.",
   ];
 
   return (

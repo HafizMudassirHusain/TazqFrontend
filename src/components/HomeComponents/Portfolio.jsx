@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaEye, FaTimes } from "react-icons/fa"; // Importing icons
 import { BsStars } from "react-icons/bs";
 import tazqaboutlogo from "../../assets/brandingkit/tazqaboutlogo.png"; // Replace with the actual logo path
-import Chip from "./Chip";
+// import Chip from "./Chip";
 import { useNavigate } from "react-router-dom";
 
 
@@ -86,7 +86,7 @@ export default function HomePortfolio() {
       </div>
 
 
-      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+      {/* <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         {chipsData.map((chip, index) => (
           <Chip
             key={index}
@@ -95,7 +95,7 @@ export default function HomePortfolio() {
             followers={chip.followers}
           />
         ))}
-      </div>
+      </div> */}
 
 
       {/* Popup Modal */}
