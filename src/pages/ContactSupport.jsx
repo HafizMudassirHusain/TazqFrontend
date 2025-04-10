@@ -4,6 +4,7 @@ import { FaGlobe, FaFacebook, FaTwitter, FaCommentDots } from "react-icons/fa";
 import emailjs from 'emailjs-com';
 import { Link } from "react-router-dom";
 import homeimg from "../assets/home.jpg";
+import { FaWhatsapp } from "react-icons/fa";
 
 
 function ContactSupport() {
@@ -50,8 +51,8 @@ function ContactSupport() {
   };
 
 
-    // WhatsApp contact function
-    const handleWhatsAppClick = () => {
+     // WhatsApp contact function
+     const handleWhatsAppClick = () => {
       // Replace with your WhatsApp number (include country code, remove any +, 0, or spaces)
       const phoneNumber = "923122329854"; // Example: Pakistan number 0300 1234567
       
@@ -200,18 +201,92 @@ function ContactSupport() {
           </div>
         </div> */}
 
-        {/* Live Chat Button */}
-        <motion.button
+       
+        {/* Modern Working Chat Button */}
+       <motion.div
+         initial={{ opacity: 0, scale: 0.8 }}
+         animate={{ opacity: 1, scale: 1 }}
+         className="fixed bottom-8 right-8 z-50"
+       >
+         <div className="relative group">
+           {/* Main button - now with proper click handling */}
+           <motion.button
          onClick={handleWhatsAppClick}
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="fixed bottom-6 right-6 bg-[#8CA419] text-black px-4 
-          py-2 rounded-full shadow-lg hover:bg-[#A0C518] transition duration-300
-           flex items-center cursor-pointer"
-        >
-          <FaCommentDots className="mr-2" /> Live Chat
-        </motion.button>
+         initial={{ opacity: 0, scale: 0.8 }}
+         animate={{
+           opacity: 1,
+           scale: 1,
+           boxShadow: [
+             "0 4px 14px rgba(16, 185, 129, 0.3)",
+             "0 6px 20px rgba(16, 185, 129, 0.4)",
+             "0 4px 14px rgba(16, 185, 129, 0.3)"
+           ]
+         }}
+         whileHover={{
+           scale: 1.1,
+           boxShadow: "0 10px 20px rgba(16, 185, 129, 0.4)"
+         }}
+         whileTap={{ scale: 0.9 }}
+         transition={{
+           // Spring physics for scale/position animations
+           type: "spring",
+           stiffness: 400,
+           damping: 15,
+           // Special configuration for boxShadow animation
+           boxShadow: {
+             duration: 2,
+             repeat: Infinity,
+             repeatType: "loop",
+             ease: "easeInOut"
+           }
+         }}
+         className="flex items-center justify-center h-14 w-14 rounded-full 
+                   bg-gradient-to-br from-[#8CA419] to-[#434e11] shadow-lg
+                   hover:shadow-xl cursor-pointer relative"
+       >
+         <FaWhatsapp className="text-white text-2xl" />
+         
+         {/* Ping animation as separate element */}
+         <motion.span
+           className="absolute inset-0 rounded-full border-2 border-emerald-300 pointer-events-none"
+           animate={{
+             scale: [1, 1.4],
+             opacity: [0.7, 0]
+           }}
+           transition={{
+             duration: 2,
+             repeat: Infinity,
+             ease: "easeOut"
+           }}
+         />
+       </motion.button>
+       
+           {/* Tooltip remains the same */}
+           <div className="absolute right-16 top-1/2 -translate-y-1/2 px-3 py-2 
+                          bg-gray-800 text-white text-sm rounded-md whitespace-nowrap
+                          opacity-0 group-hover:opacity-100 transition-opacity
+                          pointer-events-none shadow-md">
+             Chat with our team
+             <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1 
+                            w-2 h-2 bg-gray-800 rotate-45"></div>
+           </div>
+       
+           {/* Ping animation remains the same */}
+           <motion.div
+             className="absolute inset-0 border-2 border-[#8CA419] rounded-full pointer-events-none"
+             animate={{
+               scale: [1, 1.4],
+               opacity: [0.7, 0]
+             }}
+             transition={{
+               duration: 2,
+               repeat: Infinity,
+               ease: "easeOut"
+             }}
+           />
+         </div>
+       </motion.div>
+       
       </div>
     </section>
   );

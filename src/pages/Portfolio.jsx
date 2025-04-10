@@ -80,7 +80,7 @@ export default function Portfolio() {
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover"  // Added to ensure proper image scaling
               }} 
-    className="text-white pt-20 px-4 sm:px-6">
+    className="text-white pt-20 pb-20 px-4 sm:px-6">
       {/* Title Section */}
       <div className="text-center mb-16 max-w-4xl mx-auto">
         <div className="animate-fade-in">
@@ -89,13 +89,13 @@ export default function Portfolio() {
            border-2 border-[#8CA419] hover:bg-[#8CA419] transition-all 
            duration-300 hover:scale-105 shadow-lg hover:shadow-[#8CA419]/30">
             <BsStars className="w-6 h-6 sm:w-8 sm:h-8 animate-pulse" /> 
-            <span>Design Portfolio</span>
+            <span>Work Collection</span>
           </button>
         </div>
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center
          text-white mb-6 leading-tight">
           Our <span className="text-[#8CA419] bg-clip-text 
-          text-transparent bg-gradient-to-r from-[#8CA419] to-[#B8D936]">Work</span> Speaks Volumes
+           bg-gradient-to-r from-[#8CA419] to-[#B8D936]">Work</span> Speaks Volumes
         </h2>
         <p className="text-gray-300 text-center max-w-2xl mx-auto text-lg sm:text-xl leading-relaxed">
           We've collaborated with industry leaders to deliver exceptional results.

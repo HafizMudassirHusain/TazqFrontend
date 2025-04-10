@@ -10,6 +10,7 @@ import Contact from "../components/Contact";
 import homeimg from "../assets/home.jpg";
 import { FaCommentDots, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
+import WorkingProcess from "../components/HomeComponents/WorkingProcess";
 
 const Home = () => {
 
@@ -54,7 +55,8 @@ const Home = () => {
 
       {/* TazSol Section */}
       <div className="relative z-10 w-full">
-        <TazqSol />
+        <WorkingProcess />
+        {/* <TazqSol /> */}
       </div>
 
       {/* Testimonial Section */}
