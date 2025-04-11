@@ -7,6 +7,7 @@ import ariba from '../../assets/tazqteam/ariba.jpg'
 import aswad from '../../assets/tazqteam/aswad.jpg'
 import subhan from '../../assets/tazqteam/subhan.jpg'
 import mishgaan from '../../assets/tazqteam/mishgaan.jpg'
+
 import haris from '../../assets/tazqteam/haris.jpg'
 
 const JuniorTeamMembers = [
