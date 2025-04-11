@@ -6,7 +6,7 @@ import hamza from '../../assets/tazqteam/hamza.jpg'
 import ariba from '../../assets/tazqteam/ariba.jpg'
 import aswad from '../../assets/tazqteam/aswad.jpg'
 import subhan from '../../assets/tazqteam/subhan.jpg'
-import mishgaan from '../../assets/tazqteam/mishgaan.jpg'
+import mishgaan from '../../assets/tazqteam/mish.jpg'
 import haris from '../../assets/tazqteam/haris.jpg'
 
 
