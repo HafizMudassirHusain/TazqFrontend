@@ -4,7 +4,8 @@ import { BsStars } from "react-icons/bs";
 import tazqaboutlogo from "../../assets/brandingkit/tazqaboutlogo.png"; // Replace with the actual logo path
 // import Chip from "./Chip";
 import { useNavigate } from "react-router-dom";
-
+import uiuximg from '../../assets/uiux/homeuiux.webp'
+import brandlogo from '../../assets/brandingidentity/brandlogo.webp'
 
 export default function HomePortfolio() {
   const [selectedProject, setSelectedProject] = useState(null); // State for modal
@@ -21,8 +22,8 @@ export default function HomePortfolio() {
   const projects = [
     { category: "Editing", title: "Video's Editing", image: tazqaboutlogo, btn: "View More Editings" },
     { category: "Marketing", title: "Digital Marketing", image: tazqaboutlogo, btn: "View More digi Marts" },
-    { category: "Design", title: "UI/UX Design", image: tazqaboutlogo, btn: "View More UI/UX" },
-    { category: "Marketing", title: "Social Media Banner", image: tazqaboutlogo, btn: "View More Banners" },
+    { category: "Design", title: "UI/UX Design", image: uiuximg, btn: "View More UI/UX" },
+    { category: "graphics", title: "Graphic Design", image: brandlogo, btn: "View More Banners" },
     { category: "Development", title: "Web And App", image: tazqaboutlogo, btn: "View More WebApps" },
     { category: "SEO", title: "SEO Project", image: tazqaboutlogo, btn: "View More Seos" },
   ];
@@ -65,7 +66,7 @@ export default function HomePortfolio() {
                 className="h-[100px] bg-cover bg-center flex items-end p-2"
                 style={{
                   backgroundImage: `url(${project.image})`,
-                  backgroundSize: "150px",
+                  backgroundSize: "300px",
                   backgroundRepeat: "no-repeat",
                 }}
               >
