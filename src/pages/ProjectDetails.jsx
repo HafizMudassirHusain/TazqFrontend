@@ -5,7 +5,7 @@ import Testimonials from "../components/HomeComponents/Testimonials";
 import { BsStars, BsArrowLeft, BsChevronRight } from "react-icons/bs";
 import { FiExternalLink } from "react-icons/fi";
 import uiuximg from '../assets/uiux/homeuiux.webp';
-import cover from '../assets/uiux/cover.jpg';
+import cover from '../assets/uiux/Cover.jpg';
 import midle from '../assets/uiux/midimg.webp';
 import lastimg from '../assets/uiux/lastimg.webp';
 import anotherimg from '../assets/uiux/anotherimg.webp';
