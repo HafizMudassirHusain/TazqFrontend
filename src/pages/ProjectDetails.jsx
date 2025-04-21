@@ -4,13 +4,13 @@ import tazqaboutlogo from "../assets/brandingkit/tazqaboutlogo.png";
 import Testimonials from "../components/HomeComponents/Testimonials";
 import { BsStars, BsArrowLeft, BsChevronRight } from "react-icons/bs";
 import { FiExternalLink } from "react-icons/fi";
-import uiuximg from '../assets/uiux/homeuiux.webp'
-import cover from '../assets/uiux/cover.jpg'
-import midle from '../assets/uiux/midimg.webp'
-import lastimg from '../assets/uiux/lastimg.webp'
-import anotherimg from '../assets/uiux/anotherimg.webp'
-import sone from '../assets/brandingidentity/brandlogo.webp'
-import stwo from '../assets/brandingidentity/brandgraphics.jpg'
+import uiuximg from '../assets/uiux/homeuiux.webp';
+import cover from '../assets/uiux/cover.jpg';
+import midle from '../assets/uiux/midimg.webp';
+import lastimg from '../assets/uiux/lastimg.webp';
+import anotherimg from '../assets/uiux/anotherimg.webp';
+import sone from '../assets/brandingidentity/brandlogo.webp';
+import stwo from '../assets/brandingidentity/brandgraphics.jpg';
 import homeimg from "../assets/home.jpg";
 
 const PROJECT_CATEGORIES = {
