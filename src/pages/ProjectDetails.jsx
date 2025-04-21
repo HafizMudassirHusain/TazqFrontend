@@ -13,6 +13,7 @@ import sone from '../assets/brandingidentity/brandlogo.webp';
 import stwo from '../assets/brandingidentity/brandgraphics.jpg';
 import homeimg from "../assets/home.jpg";
 
+
 const PROJECT_CATEGORIES = {
   EDITING: "Editing",
   MARKETING: "Marketing",
