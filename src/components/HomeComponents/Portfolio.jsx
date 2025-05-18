@@ -4,8 +4,10 @@ import { BsStars } from "react-icons/bs";
 import tazqaboutlogo from "../../assets/brandingkit/tazqaboutlogo.png"; // Replace with the actual logo path
 // import Chip from "./Chip";
 import { useNavigate } from "react-router-dom";
-import uiuximg from '../../assets/uiux/homeuiux.webp'
-import brandlogo from '../../assets/brandingidentity/brandlogo.webp'
+import uiuximg from '../../assets/uiux/homeuiux.webp';
+import brandlogo from '../../assets/brandingidentity/brandlogo.webp';
+import web from '../../assets/web/imgagency.png';
+
 
 export default function HomePortfolio() {
   const [selectedProject, setSelectedProject] = useState(null); // State for modal
@@ -20,11 +22,11 @@ export default function HomePortfolio() {
   }, [selectedProject]);
 
   const projects = [
+    { category: "graphics", title: "Graphic Design", image: brandlogo, btn: "View More Banners" },
     { category: "Editing", title: "Video's Editing", image: tazqaboutlogo, btn: "View More Editings" },
     { category: "Marketing", title: "Digital Marketing", image: tazqaboutlogo, btn: "View More digi Marts" },
     { category: "Design", title: "UI/UX Design", image: uiuximg, btn: "View More UI/UX" },
-    { category: "graphics", title: "Graphic Design", image: brandlogo, btn: "View More Banners" },
-    { category: "Development", title: "Web And App", image: tazqaboutlogo, btn: "View More WebApps" },
+    { category: "Development", title: "Web And App", image: web, btn: "View More WebApps" },
     { category: "SEO", title: "SEO Project", image: tazqaboutlogo, btn: "View More Seos" },
   ];
 

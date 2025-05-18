@@ -5,6 +5,11 @@ import tazqaboutlogo from "../assets/brandingkit/tazqaboutlogo.png";
 // import Chip from "../components/HomeComponents/Chip";
 import { useNavigate } from "react-router-dom";
 import homeimg from "../assets/home.jpg";
+import web from "../assets/web/imgagency.png";
+import webtwo from "../assets/web/imgagencytwo.png";
+import webm from "../assets/web/micro.jpeg";
+import webmtwo from "../assets/web/microtwo.png";
+
 
 
 export default function Portfolio() {
@@ -39,7 +44,7 @@ export default function Portfolio() {
       category: "Design", 
       title: "UI/UX Design", 
       description: "Beautiful and intuitive user interfaces designed for optimal experience",
-      image: tazqaboutlogo, 
+      image: web, 
       btn: "View More UI/UX" 
     },
     { 
@@ -53,7 +58,7 @@ export default function Portfolio() {
       category: "Development", 
       title: "Web And App", 
       description: "Custom web and mobile applications built with modern technologies",
-      image: tazqaboutlogo, 
+      image: webtwo, 
       btn: "View More WebApps" 
     },
     { 

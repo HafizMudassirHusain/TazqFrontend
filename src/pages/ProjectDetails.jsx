@@ -12,6 +12,13 @@ import anotherimg from '../assets/uiux/anotherimg.webp';
 import sone from '../assets/brandingidentity/brandlogo.webp';
 import stwo from '../assets/brandingidentity/brandgraphics.jpg';
 import homeimg from "../assets/home.jpg";
+import web from "../assets/web/imgagency.png";
+import webtwo from "../assets/web/imgagencytwo.png";
+import webmicro from "../assets/web/micro.jpeg";
+import webmicrotwo from "../assets/web/microtwo.png";
+import webapp from "../assets/portfoliouiux.png";
+
+
 
 
 const PROJECT_CATEGORIES = {
@@ -51,11 +58,11 @@ const projects = [
   { id: 19, title: "Brand Identity", category: PROJECT_CATEGORIES.GRAPHICS, image: stwo, tagline: "Creating memorable brand visuals." },
   { id: 20, title: "Marketing Graphics", category: PROJECT_CATEGORIES.GRAPHICS, image: sone, tagline: "Visuals that convert and engage." },
 
-  { id: 21, title: "E-commerce Website", category: PROJECT_CATEGORIES.DEVELOPMENT, image: tazqaboutlogo, tagline: "Building the future, one line at a time." },
-  { id: 22, title: "Web Application", category: PROJECT_CATEGORIES.DEVELOPMENT, image: tazqaboutlogo, tagline: "Powerful web applications for businesses." },
-  { id: 23, title: "Mobile App Development", category: PROJECT_CATEGORIES.DEVELOPMENT, image: tazqaboutlogo, tagline: "Building the future, one line of code at a time." },
-  { id: 24, title: "Web And App", category: PROJECT_CATEGORIES.DEVELOPMENT, image: tazqaboutlogo, tagline: "Building the future, one line of code at a time." },
-  { id: 25, title: "Mobile Development", category: PROJECT_CATEGORIES.DEVELOPMENT, image: tazqaboutlogo, tagline: "Cross-platform mobile solutions." },
+  { id: 21, title: "MicroFinance Website", category: PROJECT_CATEGORIES.DEVELOPMENT, image: web, tagline: "Building the future, one line at a time." },
+  { id: 22, title: "Web Application", category: PROJECT_CATEGORIES.DEVELOPMENT, image: webtwo, tagline: "Powerful web applications for businesses." },
+  { id: 23, title: "Mobile App Development", category: PROJECT_CATEGORIES.DEVELOPMENT, image: webmicro, tagline: "Building the future, one line of code at a time." },
+  { id: 24, title: "Web And App", category: PROJECT_CATEGORIES.DEVELOPMENT, image: webmicrotwo, tagline: "Building the future, one line of code at a time." },
+  { id: 25, title: "Mobile Development", category: PROJECT_CATEGORIES.DEVELOPMENT, image: webapp, tagline: "Cross-platform mobile solutions." },
 ];
 
 

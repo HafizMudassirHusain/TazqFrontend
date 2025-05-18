@@ -4,12 +4,12 @@ import { useNavigate } from "react-router-dom";
 
 export default function CreativeDesigns() {
   const services = [
-    { title: "Content Writer", desc: "Engaging and SEO-optimized content to captivate your audience.", link:"/contentwriterprice" },
-    { title: "Web Development", desc: "Creating high-quality, responsive, and user-friendly websites.", link: "/webdevelopprice" },
-    { title: "Digital Marketing", desc: "Boosting online presence with strategic marketing solutions.", link: "/digitalmarketprice" },
     { title: "Graphic Design", desc: "High-quality branding, graphic design, and UI/UX.", link: "/graphicdesignprice" },
-    { title: "Mobile App", desc: "Building intuitive and efficient mobile applications.", link: "/appdevprice" },
     { title: "Video Editing", desc: "Producing engaging and professional video content.", link: "/videoeditingprice" },
+    { title: "Digital Marketing", desc: "Boosting online presence with strategic marketing solutions.", link: "/digitalmarketprice" },
+    { title: "Web Development", desc: "Creating high-quality, responsive, and user-friendly websites.", link: "/webdevelopprice" },
+    { title: "Mobile App", desc: "Building intuitive and efficient mobile applications.", link: "/appdevprice" },
+    { title: "Content Writer", desc: "Engaging and SEO-optimized content to captivate your audience.", link:"/contentwriterprice" },
 ];
 const naviagte = useNavigate("");
 
