@@ -18,9 +18,6 @@ import webmicro from "../assets/web/micro.jpeg";
 import webmicrotwo from "../assets/web/microtwo.png";
 import webapp from "../assets/portfoliouiux.png";
 
-
-
-
 const PROJECT_CATEGORIES = {
   EDITING: "Editing",
   MARKETING: "Marketing",
@@ -64,7 +61,6 @@ const projects = [
   { id: 24, title: "Web And App", category: PROJECT_CATEGORIES.DEVELOPMENT, image: webmicrotwo, tagline: "Building the future, one line of code at a time." },
   { id: 25, title: "Mobile Development", category: PROJECT_CATEGORIES.DEVELOPMENT, image: webapp, tagline: "Cross-platform mobile solutions." },
 ];
-
 
 export default function ProjectDetail() {
   const location = useLocation();
