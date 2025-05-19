@@ -39,7 +39,6 @@ function App() {
 
         </Routes>
       </div>
-
       {/* Footer at the bottom */}
       <Footer />
     </div>
