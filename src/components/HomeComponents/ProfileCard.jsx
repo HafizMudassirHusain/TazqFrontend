@@ -24,7 +24,7 @@ export default function ProfileCard({imgSrc}) {
       {/* Speech Bubble */}
       <div className="relative px-4 py-4 bg-[#b0d445] text-white 
        rounded-lg shadow-lg text-md sm:text-xs">
-        <p className="text-lg sm:text-sm">Hey there! I love coding 🚀</p>
+        <p className="text-lg sm:text-sm">Hey there! I love the services 🚀</p>
 
         {/* Tail of the speech bubble */}
         <div className="absolute -bottom-2 left-10 w-5 h-5 bg-[#b0d445] rotate-45"></div>

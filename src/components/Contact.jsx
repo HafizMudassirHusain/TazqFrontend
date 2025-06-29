@@ -1,20 +1,23 @@
 import React from "react";
 import { BsStars } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
   // WhatsApp contact function
+  const navigate = useNavigate();
   const handleWhatsAppClick = () => {
-    // Replace with your WhatsApp number (include country code, remove any +, 0, or spaces)
-    const phoneNumber = "923122329854"; // Example: Pakistan number 0300 1234567
+    navigate('/contact')
+    // // Replace with your WhatsApp number (include country code, remove any +, 0, or spaces)
+    // const phoneNumber = "923122329854"; // Example: Pakistan number 0300 1234567
     
-    // Message that will be pre-filled
-    const message = "Hello! I'd like to book a consultation call.";
+    // // Message that will be pre-filled
+    // const message = "Hello! I'd like to book a consultation call.";
     
-    // Create WhatsApp link
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    // // Create WhatsApp link
+    // const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     
-    // Open in new tab
-    window.open(whatsappUrl, "_blank");
+    // // Open in new tab
+    // window.open(whatsappUrl, "_blank");
   };
 
   return (

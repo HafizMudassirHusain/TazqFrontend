@@ -8,8 +8,15 @@ import creater4 from "../../assets/tazqteam/aswad.jpg";
 import creater5 from "../../assets/tazqteam/huzaifa.jpg";
 import herorbimg from "../../assets/herobgimg.png";
 import ProfileCard from "./ProfileCard";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  
+  const navigate = useNavigate();
+  const viewServices = () =>{
+         navigate('/services')  
+  }
+
   const creater = [
     { create: creater1 },
     { create: creater2 },
@@ -48,8 +55,8 @@ const HeroSection = () => {
         </p>
 
         {/* CTA Button */}
-        <button className="mt-6 sm:mt-8 mx-auto text-white px-5 sm:px-6 md:px-8 py-2 sm:py-3 flex items-center gap-2 rounded-lg border border-[#8CA419] hover:bg-[#8CA419] transition duration-300 text-sm sm:text-base">
-          View Pricing <FaArrowRight className="text-xs sm:text-sm" />
+        <button onClick={viewServices} className="mt-6 sm:mt-8 mx-auto text-white px-5 sm:px-6 md:px-8 py-2 sm:py-3 flex items-center gap-2 rounded-lg border border-[#8CA419] hover:bg-[#8CA419] transition duration-300 text-sm sm:text-base">
+          View Our Services <FaArrowRight className="text-xs sm:text-sm" />
         </button>
       </div>
 
