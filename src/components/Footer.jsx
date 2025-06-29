@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope, FaPhone, FaTiktok } from "react-icons/fa"; // Importing React Icons
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
         <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-8">
           {/* Logo and Motive */}
           <div>
-            <h2 className="text-2xl font-bold text-[#8CA419]">Tazq</h2>
+            <h2 className="text-2xl font-bold text-[#8CA419]">TazQ Solution</h2>
             <p className="text-gray-400 mt-2">
               Empowering businesses with creative designs and branding solutions.
             </p>
@@ -68,10 +69,10 @@ export default function Footer() {
                 <FaFacebook size={24} />
               </Link>
               <Link
-                to="#"
+                to="https://x.com/tazqsolutions"
                 className="text-gray-400 hover:text-[#8CA419] transition duration-300"
               >
-                <FaTwitter size={24} />
+                <FaSquareXTwitter size={24} />
               </Link>
               <Link
                 to="https://www.instagram.com/tazqsolutions/"
@@ -98,7 +99,7 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            &copy; {new Date().getFullYear()} Tazq. All rights reserved.
+            &copy; {new Date().getFullYear()} TazQ Solution. All rights reserved.
           </p>
         </div>
       </footer>

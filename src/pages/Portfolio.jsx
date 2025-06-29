@@ -9,6 +9,8 @@ import web from "../assets/web/imgagency.png";
 import webtwo from "../assets/web/imgagencytwo.png";
 import webm from "../assets/web/micro.jpeg";
 import webmtwo from "../assets/web/microtwo.png";
+// import brandlogo from '../../assets/brandingidentity/brandlogo.webp';
+import brandlogo from '../assets/brandingidentity/brandlogo.webp';
 
 
 
@@ -26,20 +28,20 @@ export default function Portfolio() {
   }, [selectedProject]);
 
   const projects = [
-    { 
-      category: "Editing", 
-      title: "Video's Editing", 
-      description: "Professional video editing services for content creators and businesses",
-      image: tazqaboutlogo, 
-      btn: "View More Editings" 
-    },
-    { 
-      category: "Marketing", 
-      title: "Digital Marketing", 
-      description: "Comprehensive digital marketing strategies to grow your brand",
-      image: tazqaboutlogo, 
-      btn: "View More digi Marts" 
-    },
+    // { 
+    //   category: "Editing", 
+    //   title: "Video's Editing", 
+    //   description: "Professional video editing services for content creators and businesses",
+    //   image: tazqaboutlogo, 
+    //   btn: "View More Editings" 
+    // },
+    // { 
+    //   category: "Marketing", 
+    //   title: "Digital Marketing", 
+    //   description: "Comprehensive digital marketing strategies to grow your brand",
+    //   image: tazqaboutlogo, 
+    //   btn: "View More digi Marts" 
+    // },
     { 
       category: "Design", 
       title: "UI/UX Design", 
@@ -48,10 +50,10 @@ export default function Portfolio() {
       btn: "View More UI/UX" 
     },
     { 
-      category: "Marketing", 
-      title: "Social Media Banner", 
+      category: "Graphics", 
+      title: "Graphic's Design", 
       description: "Eye-catching banners designed to increase engagement on social platforms",
-      image: tazqaboutlogo, 
+      image: brandlogo, 
       btn: "View More Banners" 
     },
     { 
@@ -61,13 +63,13 @@ export default function Portfolio() {
       image: webtwo, 
       btn: "View More WebApps" 
     },
-    { 
-      category: "SEO", 
-      title: "SEO Project", 
-      description: "Search engine optimization services to improve your online visibility",
-      image: tazqaboutlogo, 
-      btn: "View More Seos" 
-    },
+    // { 
+    //   category: "SEO", 
+    //   title: "SEO Project", 
+    //   description: "Search engine optimization services to improve your online visibility",
+    //   image: tazqaboutlogo, 
+    //   btn: "View More Seos" 
+    // },
   ];
 
   const chipsData = [

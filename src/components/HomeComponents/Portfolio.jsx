@@ -22,12 +22,12 @@ export default function HomePortfolio() {
   }, [selectedProject]);
 
   const projects = [
-    { category: "graphics", title: "Graphic Design", image: brandlogo, btn: "View More Banners" },
-    { category: "Editing", title: "Video's Editing", image: tazqaboutlogo, btn: "View More Editings" },
-    { category: "Marketing", title: "Digital Marketing", image: tazqaboutlogo, btn: "View More digi Marts" },
+    { category: "graphics", title: "Graphic Design", image: brandlogo, btn: "View More Designs" },
+    // { category: "Editing", title: "Video's Editing", image: tazqaboutlogo, btn: "View More Editings" },
+    // { category: "Marketing", title: "Digital Marketing", image: tazqaboutlogo, btn: "View More digi Marts" },
     { category: "Design", title: "UI/UX Design", image: uiuximg, btn: "View More UI/UX" },
     { category: "Development", title: "Web And App", image: web, btn: "View More WebApps" },
-    { category: "SEO", title: "SEO Project", image: tazqaboutlogo, btn: "View More Seos" },
+    // { category: "SEO", title: "SEO Project", image: tazqaboutlogo, btn: "View More Seos" },
   ];
 
   const chipsData = [

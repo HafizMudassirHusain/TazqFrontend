@@ -25,9 +25,9 @@ function ContactSupport() {
     setIsSubmitting(true);
     
     // Replace these with your EmailJS credentials
-    const serviceID = 'service_kj0ipdq';
-    const templateID = 'template_ax35b4d';
-    const userID = 'Pv3yL9ioNcyiGiaxV';
+    const serviceID = 'service_gqiye7v';
+    const templateID = 'template_t6pswzq';
+    const userID = 'qu2JSnRevujDzFHyR';
     
     emailjs.send(serviceID, templateID, {
       name: formData.name,
