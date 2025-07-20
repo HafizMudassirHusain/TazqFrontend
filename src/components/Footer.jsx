@@ -49,7 +49,7 @@ export default function Footer() {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <FaEnvelope className="text-gray-400" />
-                <p className="text-gray-400">tazqsolutions@gmail.com</p>
+                <p className="text-gray-400">contact@tazqsolutions.com</p>
               </div>
               <div className="flex items-center space-x-2">
                 <FaPhone className="text-gray-400" />
@@ -62,6 +62,12 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold text-[#C0C0C0] mb-2">Follow Us</h3>
             <div className="flex space-x-4">
+              <Link
+                to="https://www.linkedin.com/company/tazqsolutions"
+                className="text-gray-400 hover:text-[#8CA419] transition duration-300"
+              >
+                <FaLinkedin size={24} />
+              </Link>
               <Link
                 to="https://www.facebook.com/tazqsolutions"
                 className="text-gray-400 hover:text-[#8CA419] transition duration-300"
@@ -79,12 +85,6 @@ export default function Footer() {
                 className="text-gray-400 hover:text-[#8CA419] transition duration-300"
               >
                 <FaInstagram size={24} />
-              </Link>
-              <Link
-                to="https://www.linkedin.com/company/tazqsolutions"
-                className="text-gray-400 hover:text-[#8CA419] transition duration-300"
-              >
-                <FaLinkedin size={24} />
               </Link>
               <Link
                 to="https://www.tiktok.com/@tazqsolutions"

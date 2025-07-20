@@ -22,12 +22,24 @@ const teamMembers = [
       linkedin: "#"
     }
   },
+    {
+    name: "Ibrahim Awan",
+    role: "Co-Founder & COO",
+    img: asim,
+    expertise: "Expertise: Project Management & Cross-team coordination",
+    description: "Oversees operations and ensures efficient project execution through strategic management.",
+    social: {
+      facebook: "#",
+      instagram: "#",
+      linkedin: "#"
+    }
+  },
   {
     name: "Syed Muhammad Asif",
-    role: "Lead Content Writer",
+    role: "Co-Founder & CSO",
     img: asif,
-    expertise: "Content Strategy & Brand Storytelling",
-    description: "Crafting Impactful Narratives to Elevate Brands at TazQ Solutions.",
+    expertise: "Expertise: Writing & Storytelling",
+    description: "Leads creative direction and content strategy to align storytelling with business objectives.",
     social: {
       facebook: "#",
       instagram: "#",
@@ -46,18 +58,18 @@ const teamMembers = [
       linkedin: "#"
     }
   },
-  {
-    name: "Rumaisa Arif",
-    role: "Video Editor Lead",
-    img: rumaisa,
-    expertise: "Video Production & Motion Graphics",
-    description: "Bringing Stories to Life with Engaging & High-Quality Video Editing at TazQ Solutions.",
-    social: {
-      facebook: "#",
-      instagram: "#",
-      linkedin: "#"
-    }
-  },
+  // {
+  //   name: "Rumaisa Arif",
+  //   role: "Video Editor Lead",
+  //   img: rumaisa,
+  //   expertise: "Video Production & Motion Graphics",
+  //   description: "Bringing Stories to Life with Engaging & High-Quality Video Editing at TazQ Solutions.",
+  //   social: {
+  //     facebook: "#",
+  //     instagram: "#",
+  //     linkedin: "#"
+  //   }
+  // },
   {
     name: "Sadain Sikandar",
     role: "Lead Email Marketer",
@@ -131,7 +143,7 @@ const LeadershipTeam = () => {
                 </p>
               </div>
               
-              <div className="flex gap-4 mt-auto pt-3">
+              {/* <div className="flex gap-4 mt-auto pt-3">
                 <Link href={member.social.facebook} className="text-gray-400 hover:text-[#3b5998] transition-colors text-xl">
                   <FaFacebook />
                 </Link>
@@ -141,7 +153,7 @@ const LeadershipTeam = () => {
                 <Link href={member.social.linkedin} className="text-gray-400 hover:text-[#0077B5] transition-colors text-xl">
                   <FaLinkedin />
                 </Link>
-              </div>
+              </div> */}
             </motion.div>
           ))}
         </div>

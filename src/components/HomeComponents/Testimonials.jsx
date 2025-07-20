@@ -14,14 +14,14 @@ export default function Testimonials() {
         "TazQ Sol transformed our brand’s online presence. Their innovative approach gave us an edge over competitors.",
       image: c1 ,  },
     {
-      name: "Sophia Lee",
+      name: "Michella",
       role: "Creative Director",
       feedback:
         "Incredible experience! Their design and branding solutions are top-notch and truly impactful.",
       image: c2,
     },
     {
-      name: "Michael Chen",
+      name: "Chase Mattison",
       role: "Tech Entrepreneur",
       feedback:
         "TazQ Sol helped scale my startup with their strategic branding and marketing expertise. Highly recommended!",
@@ -82,7 +82,7 @@ export default function Testimonials() {
       </h2>
       <p className="text-white text-center mt-4 text-lg max-w-3xl mx-auto">
       It’s simple: We help them stand out, work smarter, and grow faster. But don’t just take our word for it
-      —see what our satisfied clients have to say!
+      see what our satisfied clients have to say!
       </p>
 
       {/* Scrolling Testimonials Container */}
