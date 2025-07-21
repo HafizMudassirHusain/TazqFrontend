@@ -7,6 +7,7 @@ import asif from '../../assets/tazqteam/asif.jpg'
 import huzaifa from '../../assets/tazqteam/huzaifa.jpg'
 import rumaisa from '../../assets/tazqteam/rumaisa.jpg'
 import sadain from '../../assets/tazqteam/sadain.jpg'
+import ibrahim from '../../assets/tazqteam/ibrahim.png'
 import mudassir from '../../assets/tazqteam/mudassir.jpg'
 
 const teamMembers = [
@@ -25,7 +26,7 @@ const teamMembers = [
     {
     name: "Ibrahim Awan",
     role: "Co-Founder & COO",
-    img: asim,
+    img: ibrahim,
     expertise: "Expertise: Project Management & Cross-team coordination",
     description: "Oversees operations and ensures efficient project execution through strategic management.",
     social: {
