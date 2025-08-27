@@ -1,11 +1,6 @@
 import { FaArrowRight } from "react-icons/fa";
 import c1 from "../../assets/clientsimg/c1.png";
 import c2 from "../../assets/clientsimg/c2.png";
-import creater1 from "../../assets/tazqteam/ariba.jpg";
-import creater2 from "../../assets/tazqteam/asif.jpg";
-import creater3 from "../../assets/tazqteam/asim.jpg";
-import creater4 from "../../assets/tazqteam/aswad.jpg";
-import creater5 from "../../assets/tazqteam/huzaifa.jpg";
 import herorbimg from "../../assets/herobgimg.png";
 import ProfileCard from "./ProfileCard";
 import { useNavigate } from "react-router-dom";
@@ -16,14 +11,6 @@ const HeroSection = () => {
   const viewServices = () =>{
          navigate('/services')  
   }
-
-  const creater = [
-    { create: creater1 },
-    { create: creater2 },
-    { create: creater3 },
-    { create: creater4 },
-    { create: creater5 },
-  ];
 
   return (
     <section className="relative text-center mt-12 sm:mt-16 py-8 sm:py-20 h-auto min-h-[400px] sm:min-h-[600px] md:min-h-[800px] w-full flex flex-col items-center px-4 sm:px-6 lg:px-8 overflow-hidden">
@@ -59,33 +46,6 @@ const HeroSection = () => {
           View Our Services <FaArrowRight className="text-xs sm:text-sm" />
         </button>
       </div>
-
-
-
-
-{/* <div>
-  <div className="flex">
-    <h1 className="add bg color">Our working Process</h1>
-    <p>step by step Guide to Achiving your bussiness</p>
-  </div>
-  <div className=" active bgcolor">
-    <div className="flex bottomborder">
-      <div className="rendered on left">
-      <span className="text-2xl">01</span>
-      <h2>Consultation</h2>
-      </div>
-      <button className="add functionality on these to below paragraph or not" ><span>icon of addintion</span>
-      <span>icon of subtraction</span></button>
-     
-      </div>
-      <p>Lorem ipsum dolor, sit 
-        amet consectetur adipisicing 
-        elit. Est, facilis sint. C</p>
-    </div>
-  </div> */}
-
-
-
 
 
     </section>
