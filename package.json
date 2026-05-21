@@ -11,7 +11,11 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.11",
+<<<<<<< HEAD
     "axios": "^1.7.7",
+=======
+    "axios": "^1.16.1",
+>>>>>>> 7dfc4f3 (fix: upgrade axios to resolve vulnerability)
     "emailjs-com": "^3.2.0",
     "framer-motion": "^12.4.10",
     "js-yaml": "^4.1.1",
